@@ -1,0 +1,32 @@
+{% include '_header.twig' %}
+
+<h1>News</h1>
+<p class="lead">View all the news articles here.</p>
+<hr>
+
+{% setcontent news = 'news/latest/3' allowpaging %}
+
+{% for newsitem in news %}
+
+<article class="media">
+  <div class="media-left">
+    <a href="{{ newsitem.link }}">
+      <img src="{{ image(newsitem.image) }}" alt="{{ newsitem.title }}">
+    </a>
+  </div>
+  <div class="media-body">
+    <h2 class="media-heading">{{ newsitem.title }}</h2>
+    <p class="media-excerpt">{{ newsitem.excerpt }}</p>
+    <a href="#" class="btn btn-primary btn-sm">Read Full Article</a>
+  </div>
+</article>
+
+{% endfor %}
+
+{{ pager() }}
+
+<hr>
+
+pagination
+
+{% include '_footer.twig' %}

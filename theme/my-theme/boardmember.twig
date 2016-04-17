@@ -1,0 +1,14 @@
+{% include '_header.twig' %}
+
+<article>
+  <header class="article__header">
+    <h1>{{ record.title }}</h1>
+    <hr>
+  </header>
+  <div class="article__body">
+    <img src="{{ image(record.image) }}" alt="{{ record.name }}" class="pull-left img-responsive" width="120" height="120" style="margin-right: 12px;">
+    {{ record.body }}
+  </div>
+</article>
+
+{% include '_footer.twig' %}

@@ -1,0 +1,28 @@
+{% include '_header.twig' %}
+
+<h1>Board</h1>
+<p class="lead">Below are all the current board members.</p>
+<hr>
+
+{% setcontent board = 'board' %}
+
+{% for boardmember in board %}
+
+<article>
+  <div class="row">
+    <div class = "col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-0">
+      <img src="{{ image(boardmember.image) }}" alt="{{ boardmember.name }}" class="img-responsive">
+    </div>
+  
+    <div class="col-md-8 col-xs-12">
+      <h2>{{ boardmember.name }}</h2>
+    </div>
+    <div class="col-md-8 col-xs-12">
+      <p>{{ boardmember.body }}</p>
+    </div>
+</div>
+</article>
+
+{% endfor %}
+
+{% include '_footer.twig' %}
