@@ -20,25 +20,25 @@ class __TwigTemplate_03e7b59ff9f5780160a04f102ada6d89cfe8296d6678d5c87b36f813af6
         // line 2
         echo "
 <article>
-  <header class=\"article__header\">
-    <h1>";
+  \t<header class=\"article__header\">
+    \t<h1>";
         // line 5
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "title", array()), "html", null, true);
         echo "</h1>
-    <hr>
-  </header>
-  <div class=\"article__body\">
-    <img src=\"";
+    \t<hr>
+  \t</header>
+  \t<div class=\"article__body\">
+    \t<img src=\"";
         // line 9
         echo twig_escape_filter($this->env, $this->env->getExtension('Bolt')->image($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "image", array())), "html", null, true);
         echo "\" alt=\"";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "name", array()), "html", null, true);
         echo "\" class=\"pull-left img-responsive\" width=\"120\" height=\"120\" style=\"margin-right: 12px;\">
-    ";
+    \t";
         // line 10
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "body", array()), "html", null, true);
         echo "
-  </div>
+  \t</div>
 </article>
 
 ";
@@ -64,14 +64,14 @@ class __TwigTemplate_03e7b59ff9f5780160a04f102ada6d89cfe8296d6678d5c87b36f813af6
 /* {% include '_header.twig' %}*/
 /* */
 /* <article>*/
-/*   <header class="article__header">*/
-/*     <h1>{{ record.title }}</h1>*/
-/*     <hr>*/
-/*   </header>*/
-/*   <div class="article__body">*/
-/*     <img src="{{ image(record.image) }}" alt="{{ record.name }}" class="pull-left img-responsive" width="120" height="120" style="margin-right: 12px;">*/
-/*     {{ record.body }}*/
-/*   </div>*/
+/*   	<header class="article__header">*/
+/*     	<h1>{{ record.title }}</h1>*/
+/*     	<hr>*/
+/*   	</header>*/
+/*   	<div class="article__body">*/
+/*     	<img src="{{ image(record.image) }}" alt="{{ record.name }}" class="pull-left img-responsive" width="120" height="120" style="margin-right: 12px;">*/
+/*     	{{ record.body }}*/
+/*   	</div>*/
 /* </article>*/
 /* */
 /* {% include '_footer.twig' %}*/

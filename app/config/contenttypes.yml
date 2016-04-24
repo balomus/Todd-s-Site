@@ -26,7 +26,7 @@ home:
         subtitle:
             type: text
             height: 300px
-        body:
+        mission_statement:
             type: html
             height: 300px
         image:
@@ -81,3 +81,30 @@ board:
         body:
             type: html
             height: 300px
+
+# ClinicsAndMeetings
+
+ClinicsAndMeetings:
+    name: Clinics And Meetings
+    singular_name: Clinic Or Meeting
+    slug: clinicsmeetings
+    singular_slug: clinicormeeting
+    listing_template: clinicsandmeetings.twig
+    record_template: clinicormeeting.twig
+    default_status: published
+    fields:
+        meeting:
+            type: text
+            class: large
+        date_and_time:
+            type: datetime
+            height: large
+        location:
+            type: text
+            height: large
+        site:
+            type: text
+            height: large
+        sport:
+            type: select
+            values: [ Basketball, Football ]

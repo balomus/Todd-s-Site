@@ -1,14 +1,5 @@
 {% include '_header.twig' %}
 
-{% setcontent home = 'home' %}
-
-{% for home in home %}
-
-<h1>{{ home.title }}</h1>
-<p class="lead">{{ home.subtitle }}</p>
-<hr>
-<p>{{ home.body }}</p>
-
-{% endfor %}
+{% include 'home.twig' %}
 
 {% include '_footer.twig' %}

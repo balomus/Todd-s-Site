@@ -23,7 +23,7 @@ class __TwigTemplate_ebc1f61e6a2d5e9824ebabff596dda8344db12c6ecb979a854c07028088
 
 <footer>
   <div class=\"container\">
-    &copy; 2015, My Site
+    &copy; 2016, Southwestern Officials Association
   </div>
 </footer><!-- /footer -->
 
@@ -48,7 +48,7 @@ class __TwigTemplate_ebc1f61e6a2d5e9824ebabff596dda8344db12c6ecb979a854c07028088
 /* */
 /* <footer>*/
 /*   <div class="container">*/
-/*     &copy; 2015, My Site*/
+/*     &copy; 2016, Southwestern Officials Association*/
 /*   </div>*/
 /* </footer><!-- /footer -->*/
 /* */
