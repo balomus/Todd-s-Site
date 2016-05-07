@@ -18,103 +18,167 @@ class __TwigTemplate_7a4ebff3c15fe09e40cfc1c971e02aa4a1ce9456d50b124de31cb94c2bd
         // line 1
         $this->loadTemplate("_header.twig", "clinicsandmeetings.twig", 1)->display($context);
         // line 2
-        echo "
+        echo "<!-- Basketball -->
 <h2>Basketball</h2>
 
-<div class=\"header-row\">
-  <div class=\"row\">
-    <div class=\"col-sm-1\">
-    </div>
-    <div class=\"col-xs-2 col-sm-2 col-md-2\">
-        <p class=\"under\">Meeting</p>
-    </div>
-    <div class=\"col-xs-3 col-sm-2 col-md-2\">
-      <p class=\"under\">Date</p>
-    </div>
-    <div class=\"col-xs-2 col-sm-2 col-md-2\">
-      <p class=\"under\">Time</p>
-    </div>
-    <div class=\"col-xs-2 col-sm-2 col-md-2\">
-      <p class=\"under\">Location</p>
-    </div>
-    <div class=\"col-xs-3 col-sm-2 col-md-2\">
-      <p class=\"under\">Site</p>
-    </div>
-    <div class=\"col-sm-1\">
-    </div>
-  </div>
-</div>
+<div class=\"table-responsive\">
+    <table class=\"table table-striped\">
+        <thead>
+            <tr>
+            <td><strong>Meeting</strong></td>
+                <td><strong>Date</strong></td>
+                <td><strong>Time</strong></td>
+                <td><strong>Location</strong></td>
+                <td><strong>Site</strong></td>
+            </tr>
+        </thead>
 
-";
-        // line 29
+        ";
+        // line 17
         $template_storage = new Bolt\Storage($context['app']);
         $context['clinicsandmeetings'] =         $template_storage->getContent("clinicormeeting", array() );
-        // line 30
+        // line 18
         echo "
-";
-        // line 31
+        ";
+        // line 19
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["clinicsandmeetings"]) ? $context["clinicsandmeetings"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["clinicormeeting"]) {
+            // line 20
+            echo "
+        ";
+            // line 21
+            if (($this->getAttribute($context["clinicormeeting"], "sport", array()) == "Basketball")) {
+                // line 22
+                echo "
+        <tr>
+            <td><p>";
+                // line 24
+                echo twig_escape_filter($this->env, $this->getAttribute($context["clinicormeeting"], "meeting", array()), "html", null, true);
+                echo "</p></td>
+            <td><p>";
+                // line 25
+                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["clinicormeeting"], "date_and_time", array()), "m/d/Y"), "html", null, true);
+                echo "</p></td>
+            <td><p>";
+                // line 26
+                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["clinicormeeting"], "date_and_time", array()), "g:ia"), "html", null, true);
+                echo "</p></td>
+            <td><p>";
+                // line 27
+                echo twig_escape_filter($this->env, $this->getAttribute($context["clinicormeeting"], "location", array()), "html", null, true);
+                echo "</p></td>
+            <td><p>";
+                // line 28
+                echo twig_escape_filter($this->env, $this->getAttribute($context["clinicormeeting"], "site", array()), "html", null, true);
+                echo "</p></td>
+        </tr>
+
+        ";
+            }
             // line 32
             echo "
-";
-            // line 35
-            echo "<div class=\"row\">
-  <div class=\"col-sm-1\">
-  </div>
-  <div class=\"col-xs-2 col-sm-2 col-md-2\">
-    ";
-            // line 39
-            echo twig_escape_filter($this->env, $this->getAttribute($context["clinicormeeting"], "meeting", array()), "html", null, true);
-            echo "
-  </div>
-  <div class=\"col-xs-3 col-sm-2 col-md-2\">
-    ";
-            // line 42
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["clinicormeeting"], "date_and_time", array()), "m/d/Y"), "html", null, true);
-            echo "
-  </div>
-  <div class=\"col-xs-2 col-sm-2 col-md-2\">
-    ";
-            // line 45
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["clinicormeeting"], "date_and_time", array()), "g:ia"), "html", null, true);
-            echo "
-  </div>
-  <div class=\"col-xs-2 col-sm-2 col-md-2\">
-    ";
-            // line 48
-            echo twig_escape_filter($this->env, $this->getAttribute($context["clinicormeeting"], "location", array()), "html", null, true);
-            echo "
-  </div>
-  <div class=\"col-xs-3 col-sm-2 col-md-2\">
-    ";
-            // line 51
-            echo twig_escape_filter($this->env, $this->getAttribute($context["clinicormeeting"], "site", array()), "html", null, true);
-            echo "
-  </div>
-  <div class=\"col-sm-1\">
-  </div>
-</div>
-
-";
-            // line 58
-            echo "
-";
+        ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['clinicormeeting'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 60
-        echo "
+        // line 34
+        echo "        
+    </table>
+</div>
+
+<!-- END Basketball -->
+
+<!-- Football -->
+
 <h2>Football</h2>
 
-";
-        // line 87
+<div class=\"table-responsive\">
+    <table class=\"table table-striped\">
+        <thead>
+            <tr>
+            <td><strong>Meeting</strong></td>
+                <td><strong>Date</strong></td>
+                <td><strong>Time</strong></td>
+                <td><strong>Location</strong></td>
+                <td><strong>Site</strong></td>
+            </tr>
+        </thead>
+
+        ";
+        // line 56
+        $template_storage = new Bolt\Storage($context['app']);
+        $context['clinicsandmeetings'] =         $template_storage->getContent("clinicormeeting", array() );
+        // line 57
         echo "
+        ";
+        // line 58
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["clinicsandmeetings"]) ? $context["clinicsandmeetings"] : null));
+        foreach ($context['_seq'] as $context["_key"] => $context["clinicormeeting"]) {
+            // line 59
+            echo "
+        ";
+            // line 60
+            if (($this->getAttribute($context["clinicormeeting"], "sport", array()) == "Football")) {
+                // line 61
+                echo "
+        <tr>
+            <td><p>";
+                // line 63
+                echo twig_escape_filter($this->env, $this->getAttribute($context["clinicormeeting"], "meeting", array()), "html", null, true);
+                echo "</p></td>
+            <td><p>";
+                // line 64
+                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["clinicormeeting"], "date_and_time", array()), "m/d/Y"), "html", null, true);
+                echo "</p></td>
+            <td><p>";
+                // line 65
+                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["clinicormeeting"], "date_and_time", array()), "g:ia"), "html", null, true);
+                echo "</p></td>
+            <td><p>";
+                // line 66
+                echo twig_escape_filter($this->env, $this->getAttribute($context["clinicormeeting"], "location", array()), "html", null, true);
+                echo "</p></td>
+            <td><p>";
+                // line 67
+                echo twig_escape_filter($this->env, $this->getAttribute($context["clinicormeeting"], "site", array()), "html", null, true);
+                echo "</p></td>
+        </tr>
+
+        ";
+            }
+            // line 71
+            echo "
+        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['clinicormeeting'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 73
+        echo "        
+    </table>
+</div>
+
+<!-- END Football -->
+
+<ul>
+    <li>The Local Association meeting is required by the association.</li>
+    <li>The State Clinic is required in order to officiate post-season play.</li>
+    <li>You must attend all six (6) clinics to qualify for play-offs, unless an appeal is approved by the board. </li>
+    <li>A sign-up sheet will be forwarded to each clinician by the Regional Supervisor prior to the meeting.</li>
+    <li>All meetings will start promptly at the time designated, thus don't be late!  The maximum length of each meeting is two (2) hours, but in most cases will end much sooner.  Please plan accordingly.</li>
+    <li>You may attend a local clinic in your area, or at another location, as long as it is attended within that week. Attending two sites in one week, does not give you credit for two clinics!!!</li>
+    <li>Clinicians for each clinic will be assigned at a later date by the Regional Supervisor.</li>
+    <li>Materials and information covered at each clinic will be decided by the Regional Supervisor.</li>
+    <li>Each local clinic site will cover the same information on the same dates.</li>
+    <li>Local clinic dates and times may not be changed.  Locations may be changed with approval from the board.</li>
+</ul>
+
 ";
-        // line 88
-        $this->loadTemplate("_footer.twig", "clinicsandmeetings.twig", 88)->display($context);
+        // line 92
+        $this->loadTemplate("_footer.twig", "clinicsandmeetings.twig", 92)->display($context);
     }
 
     public function getTemplateName()
@@ -129,94 +193,99 @@ class __TwigTemplate_7a4ebff3c15fe09e40cfc1c971e02aa4a1ce9456d50b124de31cb94c2bd
 
     public function getDebugInfo()
     {
-        return array (  117 => 88,  114 => 87,  109 => 60,  102 => 58,  93 => 51,  87 => 48,  81 => 45,  75 => 42,  69 => 39,  63 => 35,  60 => 32,  56 => 31,  53 => 30,  50 => 29,  21 => 2,  19 => 1,);
+        return array (  181 => 92,  160 => 73,  153 => 71,  146 => 67,  142 => 66,  138 => 65,  134 => 64,  130 => 63,  126 => 61,  124 => 60,  121 => 59,  117 => 58,  114 => 57,  111 => 56,  87 => 34,  80 => 32,  73 => 28,  69 => 27,  65 => 26,  61 => 25,  57 => 24,  53 => 22,  51 => 21,  48 => 20,  44 => 19,  41 => 18,  38 => 17,  21 => 2,  19 => 1,);
     }
 }
 /* {% include '_header.twig' %}*/
-/* */
+/* <!-- Basketball -->*/
 /* <h2>Basketball</h2>*/
 /* */
-/* <div class="header-row">*/
-/*   <div class="row">*/
-/*     <div class="col-sm-1">*/
-/*     </div>*/
-/*     <div class="col-xs-2 col-sm-2 col-md-2">*/
-/*         <p class="under">Meeting</p>*/
-/*     </div>*/
-/*     <div class="col-xs-3 col-sm-2 col-md-2">*/
-/*       <p class="under">Date</p>*/
-/*     </div>*/
-/*     <div class="col-xs-2 col-sm-2 col-md-2">*/
-/*       <p class="under">Time</p>*/
-/*     </div>*/
-/*     <div class="col-xs-2 col-sm-2 col-md-2">*/
-/*       <p class="under">Location</p>*/
-/*     </div>*/
-/*     <div class="col-xs-3 col-sm-2 col-md-2">*/
-/*       <p class="under">Site</p>*/
-/*     </div>*/
-/*     <div class="col-sm-1">*/
-/*     </div>*/
-/*   </div>*/
+/* <div class="table-responsive">*/
+/*     <table class="table table-striped">*/
+/*         <thead>*/
+/*             <tr>*/
+/*             <td><strong>Meeting</strong></td>*/
+/*                 <td><strong>Date</strong></td>*/
+/*                 <td><strong>Time</strong></td>*/
+/*                 <td><strong>Location</strong></td>*/
+/*                 <td><strong>Site</strong></td>*/
+/*             </tr>*/
+/*         </thead>*/
+/* */
+/*         {% setcontent clinicsandmeetings = 'clinicormeeting' %}*/
+/* */
+/*         {% for clinicormeeting in clinicsandmeetings %}*/
+/* */
+/*         {% if clinicormeeting.sport == 'Basketball' %}*/
+/* */
+/*         <tr>*/
+/*             <td><p>{{ clinicormeeting.meeting }}</p></td>*/
+/*             <td><p>{{ clinicormeeting.date_and_time|date('m/d/Y') }}</p></td>*/
+/*             <td><p>{{ clinicormeeting.date_and_time|date('g:ia') }}</p></td>*/
+/*             <td><p>{{ clinicormeeting.location }}</p></td>*/
+/*             <td><p>{{ clinicormeeting.site }}</p></td>*/
+/*         </tr>*/
+/* */
+/*         {% endif %}*/
+/* */
+/*         {% endfor %}*/
+/*         */
+/*     </table>*/
 /* </div>*/
 /* */
-/* {% setcontent clinicsandmeetings = 'clinicormeeting' %}*/
+/* <!-- END Basketball -->*/
 /* */
-/* {% for clinicormeeting in clinicsandmeetings %}*/
-/* */
-/* {# {% if clincormeeting.sport == 'Basketball' %}*/
-/*  #}*/
-/* <div class="row">*/
-/*   <div class="col-sm-1">*/
-/*   </div>*/
-/*   <div class="col-xs-2 col-sm-2 col-md-2">*/
-/*     {{ clinicormeeting.meeting }}*/
-/*   </div>*/
-/*   <div class="col-xs-3 col-sm-2 col-md-2">*/
-/*     {{ clinicormeeting.date_and_time|date('m/d/Y') }}*/
-/*   </div>*/
-/*   <div class="col-xs-2 col-sm-2 col-md-2">*/
-/*     {{ clinicormeeting.date_and_time|date('g:ia') }}*/
-/*   </div>*/
-/*   <div class="col-xs-2 col-sm-2 col-md-2">*/
-/*     {{ clinicormeeting.location }}*/
-/*   </div>*/
-/*   <div class="col-xs-3 col-sm-2 col-md-2">*/
-/*     {{ clinicormeeting.site }}*/
-/*   </div>*/
-/*   <div class="col-sm-1">*/
-/*   </div>*/
-/* </div>*/
-/* */
-/* {# {% endif %} #}*/
-/* */
-/* {% endfor %}*/
+/* <!-- Football -->*/
 /* */
 /* <h2>Football</h2>*/
 /* */
-/* {# <h1>Board</h1>*/
-/* <p class="lead">Below are all the current board members.</p>*/
-/* <hr>*/
+/* <div class="table-responsive">*/
+/*     <table class="table table-striped">*/
+/*         <thead>*/
+/*             <tr>*/
+/*             <td><strong>Meeting</strong></td>*/
+/*                 <td><strong>Date</strong></td>*/
+/*                 <td><strong>Time</strong></td>*/
+/*                 <td><strong>Location</strong></td>*/
+/*                 <td><strong>Site</strong></td>*/
+/*             </tr>*/
+/*         </thead>*/
 /* */
-/* {% setcontent board = 'board' %}*/
+/*         {% setcontent clinicsandmeetings = 'clinicormeeting' %}*/
 /* */
-/* {% for boardmember in board %}*/
+/*         {% for clinicormeeting in clinicsandmeetings %}*/
 /* */
-/* <article>*/
-/*   <div class="row">*/
-/*     <div class = "col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-0">*/
-/*       <img src="{{ image(boardmember.image) }}" alt="{{ boardmember.name }}" class="img-responsive">*/
-/*     </div>*/
-/*   */
-/*     <div class="col-md-8 col-xs-12">*/
-/*       <h2>{{ boardmember.name }}</h2>*/
-/*     </div>*/
-/*     <div class="col-md-8 col-xs-12">*/
-/*       <p>{{ boardmember.body }}</p>*/
-/*     </div>*/
+/*         {% if clinicormeeting.sport == 'Football' %}*/
+/* */
+/*         <tr>*/
+/*             <td><p>{{ clinicormeeting.meeting }}</p></td>*/
+/*             <td><p>{{ clinicormeeting.date_and_time|date('m/d/Y') }}</p></td>*/
+/*             <td><p>{{ clinicormeeting.date_and_time|date('g:ia') }}</p></td>*/
+/*             <td><p>{{ clinicormeeting.location }}</p></td>*/
+/*             <td><p>{{ clinicormeeting.site }}</p></td>*/
+/*         </tr>*/
+/* */
+/*         {% endif %}*/
+/* */
+/*         {% endfor %}*/
+/*         */
+/*     </table>*/
 /* </div>*/
-/* </article>*/
 /* */
-/* {% endfor %} #}*/
+/* <!-- END Football -->*/
+/* */
+/* <ul>*/
+/*     <li>The Local Association meeting is required by the association.</li>*/
+/*     <li>The State Clinic is required in order to officiate post-season play.</li>*/
+/*     <li>You must attend all six (6) clinics to qualify for play-offs, unless an appeal is approved by the board. </li>*/
+/*     <li>A sign-up sheet will be forwarded to each clinician by the Regional Supervisor prior to the meeting.</li>*/
+/*     <li>All meetings will start promptly at the time designated, thus don't be late!  The maximum length of each meeting is two (2) hours, but in most cases will end much sooner.  Please plan accordingly.</li>*/
+/*     <li>You may attend a local clinic in your area, or at another location, as long as it is attended within that week. Attending two sites in one week, does not give you credit for two clinics!!!</li>*/
+/*     <li>Clinicians for each clinic will be assigned at a later date by the Regional Supervisor.</li>*/
+/*     <li>Materials and information covered at each clinic will be decided by the Regional Supervisor.</li>*/
+/*     <li>Each local clinic site will cover the same information on the same dates.</li>*/
+/*     <li>Local clinic dates and times may not be changed.  Locations may be changed with approval from the board.</li>*/
+/* </ul>*/
 /* */
 /* {% include '_footer.twig' %}*/
+/* */

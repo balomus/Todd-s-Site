@@ -51,20 +51,24 @@ class __TwigTemplate_335b7d5f06f39f506161780df2fccc8285dd6bb2b68f3f8661f729332c5
           <li><a href=\"/bolt\">Home</a></li>
           <li><a href=\"news\">News</a></li>
           <li><a href=\"clinicsmeetings\">Clinics / Meetings</a></li>
-          <li><a href=\"#\">Promotional Points</a></li>
-          <li><a href=\"#\">Rule Changes</a></li>
-          <li><a href=\"#\">Board of Directors</a></li>
-          <li><a href=\"#\">Committees</a></li>
-          <li><a href=\"#\">Constitution / Bylaws</a></li>
-          <li><a href=\"#\">Social Media Policy</a></li>
-          <li><a href=\"#\">Schools / Leagues / Teams</a></li>
-          <li><a href=\"#\">Game Fees</a></li>
-          <li><a href=\"#\">Evaluations</a></li>
-          <li><a href=\"#\">Awards</a></li>
-          <li><a href=\"#\">Pictures</a></li>
-          <li><a href=\"#\">Application / Registration</a></li>
-          <li><a href=\"#\">Links</a></li>
           <li><a href=\"#\">Contact Us</a></li>
+          <li class=\"dropdown\">
+            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">More <span class=\"caret\"></span></a>
+            <ul class=\"dropdown-menu\">
+              <li><a href=\"#\">Promotional Points</a></li>
+              <li><a href=\"#\">Rule Changes</a></li>
+              <li><a href=\"#\">Board of Directors</a></li>
+              <li><a href=\"#\">Committees</a></li>
+              <li><a href=\"#\">Constitution / Bylaws</a></li>
+              <li><a href=\"#\">Social Media Policy</a></li>
+              <li><a href=\"#\">Schools / Leagues / Teams</a></li>
+              <li><a href=\"#\">Game Fees</a></li>
+              <li><a href=\"#\">Evaluations</a></li>
+              <li><a href=\"#\">Awards</a></li>
+              <li><a href=\"#\">Pictures</a></li>
+              <li><a href=\"#\">Application / Registration</a></li>
+              <li><a href=\"#\">Links</a></li>
+            </ul>
         </ul>
       </div>
     </div>
@@ -122,20 +126,24 @@ class __TwigTemplate_335b7d5f06f39f506161780df2fccc8285dd6bb2b68f3f8661f729332c5
 /*           <li><a href="/bolt">Home</a></li>*/
 /*           <li><a href="news">News</a></li>*/
 /*           <li><a href="clinicsmeetings">Clinics / Meetings</a></li>*/
-/*           <li><a href="#">Promotional Points</a></li>*/
-/*           <li><a href="#">Rule Changes</a></li>*/
-/*           <li><a href="#">Board of Directors</a></li>*/
-/*           <li><a href="#">Committees</a></li>*/
-/*           <li><a href="#">Constitution / Bylaws</a></li>*/
-/*           <li><a href="#">Social Media Policy</a></li>*/
-/*           <li><a href="#">Schools / Leagues / Teams</a></li>*/
-/*           <li><a href="#">Game Fees</a></li>*/
-/*           <li><a href="#">Evaluations</a></li>*/
-/*           <li><a href="#">Awards</a></li>*/
-/*           <li><a href="#">Pictures</a></li>*/
-/*           <li><a href="#">Application / Registration</a></li>*/
-/*           <li><a href="#">Links</a></li>*/
 /*           <li><a href="#">Contact Us</a></li>*/
+/*           <li class="dropdown">*/
+/*             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>*/
+/*             <ul class="dropdown-menu">*/
+/*               <li><a href="#">Promotional Points</a></li>*/
+/*               <li><a href="#">Rule Changes</a></li>*/
+/*               <li><a href="#">Board of Directors</a></li>*/
+/*               <li><a href="#">Committees</a></li>*/
+/*               <li><a href="#">Constitution / Bylaws</a></li>*/
+/*               <li><a href="#">Social Media Policy</a></li>*/
+/*               <li><a href="#">Schools / Leagues / Teams</a></li>*/
+/*               <li><a href="#">Game Fees</a></li>*/
+/*               <li><a href="#">Evaluations</a></li>*/
+/*               <li><a href="#">Awards</a></li>*/
+/*               <li><a href="#">Pictures</a></li>*/
+/*               <li><a href="#">Application / Registration</a></li>*/
+/*               <li><a href="#">Links</a></li>*/
+/*             </ul>*/
 /*         </ul>*/
 /*       </div>*/
 /*     </div>*/

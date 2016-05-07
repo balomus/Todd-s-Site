@@ -1,0 +1,12 @@
+{% include '_header.twig' %}
+
+
+{% setcontent promotionalpoints = "promotionalpoint" %}
+
+{% for promotionalpoint in promotionalpoints %}
+
+	{{ promotionalpoint.text }}
+
+{% endfor %}
+
+{% include '_footer.twig' %}

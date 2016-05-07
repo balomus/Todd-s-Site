@@ -108,3 +108,41 @@ ClinicsAndMeetings:
         sport:
             type: select
             values: [ Basketball, Football ]
+    sort: date_and_time ASC
+
+#PromotionalPoints
+
+PromotionalPoints:
+    name: Promotional Points
+    singular_name: Promotional Point
+    slug: promotionalpoints
+    singular_slug: promotionalpoint
+    listing_template: promotionalpoints.twig
+    default_status: published
+    fields:
+        text:
+            type: html
+            class: large
+
+#RuleChanges
+
+RuleChanges:
+    name: Rule Changes
+    singular_name: Rule Change
+    slug: rulechanges
+    singular_slug: rulechange
+    listing_template: rulechanges.twig
+    default_status: published
+    fields:
+        title:
+            type: text
+            class: large
+        logo:
+            type: image
+        text:
+            type: html
+            class: large
+        sport:
+            type: select
+            values: [ Basketball, Football ]
+    sort: sport ASC

@@ -1,0 +1,15 @@
+{% include '_header.twig' %}
+
+{% setcontent rulechangesselect = "rulechangeselect" %}
+
+	{% for rulechangeselect in rulechangesselect %}
+
+	<img src="{{ image(rulechangeselect.logo) }}" class="img-responsive centered">
+
+	<h1><a href="rulechangesselect">{{ rulechangeselect.baskeballText }}</a></h1>
+	<h1><a href="#">{{ rulechangeselect.footballText }}</a></h1>
+	{{ rulechangeselect.basketballText }}
+
+{% endfor %}
+
+{% include '_footer.twig' %}

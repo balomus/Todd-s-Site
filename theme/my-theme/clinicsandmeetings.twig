@@ -1,118 +1,92 @@
 {% include '_header.twig' %}
-
+<!-- Basketball -->
 <h2>Basketball</h2>
 
-<div class="header-row">
-  <div class="row">
-    <div class="col-sm-1">
-    </div>
-    <div class="col-xs-2 col-sm-2 col-md-2">
-        <p class="under">Meeting</p>
-    </div>
-    <div class="col-xs-3 col-sm-2 col-md-2">
-      <p class="under">Date</p>
-    </div>
-    <div class="col-xs-2 col-sm-2 col-md-2">
-      <p class="under">Time</p>
-    </div>
-    <div class="col-xs-2 col-sm-2 col-md-2">
-      <p class="under">Location</p>
-    </div>
-    <div class="col-xs-3 col-sm-2 col-md-2">
-      <p class="under">Site</p>
-    </div>
-    <div class="col-sm-1">
-    </div>
-  </div>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <td><strong>Meeting</strong></td>
+                <td><strong>Date</strong></td>
+                <td><strong>Time</strong></td>
+                <td><strong>Location</strong></td>
+                <td><strong>Site</strong></td>
+            </tr>
+        </thead>
+
+        {% setcontent clinicsandmeetings = 'clinicormeeting' %}
+
+        {% for clinicormeeting in clinicsandmeetings %}
+
+        {% if clinicormeeting.sport == 'Basketball' %}
+
+        <tr>
+            <td><p>{{ clinicormeeting.meeting }}</p></td>
+            <td><p>{{ clinicormeeting.date_and_time|date('m/d/Y') }}</p></td>
+            <td><p>{{ clinicormeeting.date_and_time|date('g:ia') }}</p></td>
+            <td><p>{{ clinicormeeting.location }}</p></td>
+            <td><p>{{ clinicormeeting.site }}</p></td>
+        </tr>
+
+        {% endif %}
+
+        {% endfor %}
+        
+    </table>
 </div>
 
-{% setcontent clinicsandmeetings = 'clinicormeeting' %}
+<!-- END Basketball -->
 
-{% for clinicormeeting in clinicsandmeetings %}
-
-{% if clinicormeeting.sport == 'Basketball' %}
-
-<div class="row">
-  <div class="col-sm-1">
-  </div>
-  <div class="col-xs-2 col-sm-2 col-md-2">
-    {{ clinicormeeting.meeting }}
-  </div>
-  <div class="col-xs-3 col-sm-2 col-md-2">
-    {{ clinicormeeting.date_and_time|date('m/d/Y') }}
-  </div>
-  <div class="col-xs-2 col-sm-2 col-md-2">
-    {{ clinicormeeting.date_and_time|date('g:ia') }}
-  </div>
-  <div class="col-xs-2 col-sm-2 col-md-2">
-    {{ clinicormeeting.location }}
-  </div>
-  <div class="col-xs-3 col-sm-2 col-md-2">
-    {{ clinicormeeting.site }}
-  </div>
-  <div class="col-sm-1">
-  </div>
-</div>
-
-{% endif %}
-
-{% endfor %}
+<!-- Football -->
 
 <h2>Football</h2>
 
-{% for clinicormeeting in clinicsandmeetings %}
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <td><strong>Meeting</strong></td>
+                <td><strong>Date</strong></td>
+                <td><strong>Time</strong></td>
+                <td><strong>Location</strong></td>
+                <td><strong>Site</strong></td>
+            </tr>
+        </thead>
 
-{% if clinicormeeting.sport == 'Football' %}
+        {% setcontent clinicsandmeetings = 'clinicormeeting' %}
 
-<div class="row">
-  <div class="col-sm-1">
-  </div>
-  <div class="col-xs-2 col-sm-2 col-md-2">
-    {{ clinicormeeting.meeting }}
-  </div>
-  <div class="col-xs-3 col-sm-2 col-md-2">
-    {{ clinicormeeting.date_and_time|date('m/d/Y') }}
-  </div>
-  <div class="col-xs-2 col-sm-2 col-md-2">
-    {{ clinicormeeting.date_and_time|date('g:ia') }}
-  </div>
-  <div class="col-xs-2 col-sm-2 col-md-2">
-    {{ clinicormeeting.location }}
-  </div>
-  <div class="col-xs-3 col-sm-2 col-md-2">
-    {{ clinicormeeting.site }}
-  </div>
-  <div class="col-sm-1">
-  </div>
+        {% for clinicormeeting in clinicsandmeetings %}
+
+        {% if clinicormeeting.sport == 'Football' %}
+
+        <tr>
+            <td><p>{{ clinicormeeting.meeting }}</p></td>
+            <td><p>{{ clinicormeeting.date_and_time|date('m/d/Y') }}</p></td>
+            <td><p>{{ clinicormeeting.date_and_time|date('g:ia') }}</p></td>
+            <td><p>{{ clinicormeeting.location }}</p></td>
+            <td><p>{{ clinicormeeting.site }}</p></td>
+        </tr>
+
+        {% endif %}
+
+        {% endfor %}
+        
+    </table>
 </div>
 
-{% endif %}
+<!-- END Football -->
 
-{% endfor %}
-
-{# <h1>Board</h1>
-<p class="lead">Below are all the current board members.</p>
-<hr>
-
-{% setcontent board = 'board' %}
-
-{% for boardmember in board %}
-
-<article>
-  <div class="row">
-    <div class = "col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-0">
-      <img src="{{ image(boardmember.image) }}" alt="{{ boardmember.name }}" class="img-responsive">
-    </div>
-  
-    <div class="col-md-8 col-xs-12">
-      <h2>{{ boardmember.name }}</h2>
-    </div>
-    <div class="col-md-8 col-xs-12">
-      <p>{{ boardmember.body }}</p>
-    </div>
-</div>
-</article>
-
-{% endfor %} #}
+<ul>
+    <li>The Local Association meeting is required by the association.</li>
+    <li>The State Clinic is required in order to officiate post-season play.</li>
+    <li>You must attend all six (6) clinics to qualify for play-offs, unless an appeal is approved by the board. </li>
+    <li>A sign-up sheet will be forwarded to each clinician by the Regional Supervisor prior to the meeting.</li>
+    <li>All meetings will start promptly at the time designated, thus don't be late!  The maximum length of each meeting is two (2) hours, but in most cases will end much sooner.  Please plan accordingly.</li>
+    <li>You may attend a local clinic in your area, or at another location, as long as it is attended within that week. Attending two sites in one week, does not give you credit for two clinics!!!</li>
+    <li>Clinicians for each clinic will be assigned at a later date by the Regional Supervisor.</li>
+    <li>Materials and information covered at each clinic will be decided by the Regional Supervisor.</li>
+    <li>Each local clinic site will cover the same information on the same dates.</li>
+    <li>Local clinic dates and times may not be changed.  Locations may be changed with approval from the board.</li>
+</ul>
 
 {% include '_footer.twig' %}

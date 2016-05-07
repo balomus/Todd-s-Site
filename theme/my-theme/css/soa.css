@@ -5,3 +5,17 @@
 p.under {
 	text-decoration: underline;
 }
+
+.header-image{
+	background: url("http://res.cloudinary.com/dbnugenbb/image/upload/v1458915250/apple-desk-laptop-working1280_zesrlm.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+footer {
+	padding-bottom: 15px;
+}
+
+img.centered {
+	margin-left: auto;
+	margin-right: auto;
+}
