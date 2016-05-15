@@ -1,8 +1,8 @@
 {% include '_header.twig' %}
 
-<h1><a href="#Basketball">Basketball Rules Changes</a></h1>
-<h1><a href="#Football">Football Rules Changes</a></h1>
-
+<h1 class="center"><a href="#Basketball">Basketball Rules Changes</a></h1>
+<h1 class="center"><a href="#Football">Football Rules Changes</a></h1>
+<br>
 {% setcontent rulechanges = "rulechange" %}
 
 {% for rulechange in rulechanges %}
@@ -10,7 +10,7 @@
 	<img src="{{ image(rulechange.logo) }}" class="img-responsive centered" id="{{ rulechange.sport }}">
 
 	{{ rulechange.text }}
-	
+
 
 {% endfor %}
 

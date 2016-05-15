@@ -1,0 +1,13 @@
+{% include '_header.twig' %}
+
+
+{% setcontent committees = "committee" %}
+
+{% for committee in committees %}
+
+  <h2>{{ committee.committee }}</h2>
+	<p>{{ committee.members }}</p>
+
+{% endfor %}
+
+{% include '_footer.twig' %}

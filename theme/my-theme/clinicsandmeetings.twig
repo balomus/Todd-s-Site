@@ -1,6 +1,10 @@
 {% include '_header.twig' %}
+
+<h1 class="center"><a href="#Basketball">Basketball Clinics/Meetings</a></h1>
+<h1 class="center"><a href="#Football">Football Clinics/Meetings</a></h1>
+
 <!-- Basketball -->
-<h2>Basketball</h2>
+<h2 id="Basketball">Basketball</h2>
 
 <div class="table-responsive">
     <table class="table table-striped">
@@ -31,15 +35,28 @@
         {% endif %}
 
         {% endfor %}
-        
+
     </table>
 </div>
 
 <!-- END Basketball -->
 
+<ul>
+    <li>The Local Association meeting is required by the association.</li>
+    <li>The State Clinic is required in order to officiate post-season play.</li>
+    <li>You must attend all six (6) clinics to qualify for play-offs, unless an appeal is approved by the board. </li>
+    <li>A sign-up sheet will be forwarded to each clinician by the Regional Supervisor prior to the meeting.</li>
+    <li>All meetings will start promptly at the time designated, thus don't be late!  The maximum length of each meeting is two (2) hours, but in most cases will end much sooner.  Please plan accordingly.</li>
+    <li>You may attend a local clinic in your area, or at another location, as long as it is attended within that week. Attending two sites in one week, does not give you credit for two clinics!!!</li>
+    <li>Clinicians for each clinic will be assigned at a later date by the Regional Supervisor.</li>
+    <li>Materials and information covered at each clinic will be decided by the Regional Supervisor.</li>
+    <li>Each local clinic site will cover the same information on the same dates.</li>
+    <li>Local clinic dates and times may not be changed.  Locations may be changed with approval from the board.</li>
+</ul>
+
 <!-- Football -->
 
-<h2>Football</h2>
+<h2 id="Football">Football</h2>
 
 <div class="table-responsive">
     <table class="table table-striped">
@@ -70,7 +87,7 @@
         {% endif %}
 
         {% endfor %}
-        
+
     </table>
 </div>
 

@@ -19,9 +19,9 @@ class __TwigTemplate_f8878eb3bdb810d90f1cdc2c01e04fdf8f3d1b6f139842b9614aca72b98
         $this->loadTemplate("_header.twig", "rulechanges.twig", 1)->display($context);
         // line 2
         echo "
-<h1><a href=\"#Basketball\">Basketball Rules Changes</a></h1>
-<h1><a href=\"#Football\">Football Rules Changes</a></h1>
-
+<h1 class=\"center\"><a href=\"#Basketball\">Basketball Rules Changes</a></h1>
+<h1 class=\"center\"><a href=\"#Football\">Football Rules Changes</a></h1>
+<br>
 ";
         // line 6
         $template_storage = new Bolt\Storage($context['app']);
@@ -46,7 +46,7 @@ class __TwigTemplate_f8878eb3bdb810d90f1cdc2c01e04fdf8f3d1b6f139842b9614aca72b98
             // line 12
             echo twig_escape_filter($this->env, $this->getAttribute($context["rulechange"], "text", array()), "html", null, true);
             echo "
-\t
+
 
 ";
         }
@@ -77,9 +77,9 @@ class __TwigTemplate_f8878eb3bdb810d90f1cdc2c01e04fdf8f3d1b6f139842b9614aca72b98
 }
 /* {% include '_header.twig' %}*/
 /* */
-/* <h1><a href="#Basketball">Basketball Rules Changes</a></h1>*/
-/* <h1><a href="#Football">Football Rules Changes</a></h1>*/
-/* */
+/* <h1 class="center"><a href="#Basketball">Basketball Rules Changes</a></h1>*/
+/* <h1 class="center"><a href="#Football">Football Rules Changes</a></h1>*/
+/* <br>*/
 /* {% setcontent rulechanges = "rulechange" %}*/
 /* */
 /* {% for rulechange in rulechanges %}*/
@@ -87,8 +87,9 @@ class __TwigTemplate_f8878eb3bdb810d90f1cdc2c01e04fdf8f3d1b6f139842b9614aca72b98
 /* 	<img src="{{ image(rulechange.logo) }}" class="img-responsive centered" id="{{ rulechange.sport }}">*/
 /* */
 /* 	{{ rulechange.text }}*/
-/* 	*/
+/* */
 /* */
 /* {% endfor %}*/
 /* */
 /* {% include '_footer.twig' %}*/
+/* */

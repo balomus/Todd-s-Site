@@ -55,9 +55,9 @@ class __TwigTemplate_335b7d5f06f39f506161780df2fccc8285dd6bb2b68f3f8661f729332c5
           <li class=\"dropdown\">
             <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">More <span class=\"caret\"></span></a>
             <ul class=\"dropdown-menu\">
-              <li><a href=\"#\">Promotional Points</a></li>
-              <li><a href=\"#\">Rule Changes</a></li>
-              <li><a href=\"#\">Board of Directors</a></li>
+              <li><a href=\"promotionalpoints\">Promotional Points</a></li>
+              <li><a href=\"rulechanges\">Rule Changes</a></li>
+              <li><a href=\"board\">Board of Directors</a></li>
               <li><a href=\"#\">Committees</a></li>
               <li><a href=\"#\">Constitution / Bylaws</a></li>
               <li><a href=\"#\">Social Media Policy</a></li>
@@ -130,9 +130,9 @@ class __TwigTemplate_335b7d5f06f39f506161780df2fccc8285dd6bb2b68f3f8661f729332c5
 /*           <li class="dropdown">*/
 /*             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>*/
 /*             <ul class="dropdown-menu">*/
-/*               <li><a href="#">Promotional Points</a></li>*/
-/*               <li><a href="#">Rule Changes</a></li>*/
-/*               <li><a href="#">Board of Directors</a></li>*/
+/*               <li><a href="promotionalpoints">Promotional Points</a></li>*/
+/*               <li><a href="rulechanges">Rule Changes</a></li>*/
+/*               <li><a href="board">Board of Directors</a></li>*/
 /*               <li><a href="#">Committees</a></li>*/
 /*               <li><a href="#">Constitution / Bylaws</a></li>*/
 /*               <li><a href="#">Social Media Policy</a></li>*/

@@ -146,3 +146,21 @@ RuleChanges:
             type: select
             values: [ Basketball, Football ]
     sort: sport ASC
+
+#Committees
+
+Committees:
+    name: Committees
+    singular_name: Committee
+    slug: committees
+    singular_slug: committee
+    listing_template: committees.twig
+    default_status: published
+    fields:
+        committee:
+            type: text
+            class: large
+        members:
+            type: html
+            class: large
+    sort: committee ASC
