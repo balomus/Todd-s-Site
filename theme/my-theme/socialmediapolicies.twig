@@ -1,0 +1,11 @@
+{% include '_header.twig' %}
+
+{% setcontent socialmediapolicies = "socialmediapolicy" %}
+
+{% for socialmediapolicy in socialmediapolicies %}
+
+  {{ socialmediapolicy.content }}
+
+{% endfor %}
+
+{% include '_footer.twig' %}

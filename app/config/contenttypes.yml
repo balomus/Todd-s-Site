@@ -164,3 +164,35 @@ Committees:
             type: html
             class: large
     sort: committee ASC
+
+#ConstitutionAndBylaws
+
+ConstitutionAndBylaws:
+    name: Constitution and Bylaws
+    singular_name: Constitution Or Bylaw
+    slug: constitutionandbylaws
+    singular_slug: constitutionorbylaw
+    listing_template: constitutionandbylaws.twig
+    default_status: published
+    fields:
+        name:
+            type: text
+            class: large
+        content:
+            type: html
+            class: large
+    sort: name DESC
+
+#SocialMediaPolicies
+
+SocialMediaPolicies:
+    name: Social Media Policies
+    singular_name: Social Media Policy
+    slug: socialmediapolicies
+    singular_slug: socialmediapolicy
+    listing_template: socialmediapolicies.twig
+    default_status: published
+    fields:
+        content:
+            type: html
+            class: large

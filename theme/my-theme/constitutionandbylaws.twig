@@ -1,0 +1,12 @@
+{% include '_header.twig' %}
+
+{% setcontent constitutionandbylaws = "constitutionorbylaw" %}
+
+{% for constitutionorbylaw in constitutionandbylaws %}
+
+    <h2>{{ constitutionorbylaw.name }}</h2>
+    <p>{{ constitutionorbylaw.content }}</p>
+
+{% endfor %}
+
+{% include '_footer.twig' %}

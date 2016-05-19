@@ -33,7 +33,7 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
   <!-- END References -->
 </head>
 <body>
-  
+
 <header>
   <nav class=\"navbar navbar-default\">
     <div class=\"container-fluid\">
@@ -58,9 +58,9 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
               <li><a href=\"promotionalpoints\">Promotional Points</a></li>
               <li><a href=\"rulechanges\">Rule Changes</a></li>
               <li><a href=\"board\">Board of Directors</a></li>
-              <li><a href=\"#\">Committees</a></li>
-              <li><a href=\"#\">Constitution / Bylaws</a></li>
-              <li><a href=\"#\">Social Media Policy</a></li>
+              <li><a href=\"committees\">Committees</a></li>
+              <li><a href=\"constitutionandbylaws\">Constitution / Bylaws</a></li>
+              <li><a href=\"socialmediapolicies\">Social Media Policy</a></li>
               <li><a href=\"#\">Schools / Leagues / Teams</a></li>
               <li><a href=\"#\">Game Fees</a></li>
               <li><a href=\"#\">Evaluations</a></li>
@@ -76,7 +76,8 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
 </header><!-- /header -->
 
 <main>
-<div class=\"container\">";
+<div class=\"container\">
+";
     }
 
     public function getTemplateName()
@@ -108,7 +109,7 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
 /*   <!-- END References -->*/
 /* </head>*/
 /* <body>*/
-/*   */
+/* */
 /* <header>*/
 /*   <nav class="navbar navbar-default">*/
 /*     <div class="container-fluid">*/
@@ -133,9 +134,9 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
 /*               <li><a href="promotionalpoints">Promotional Points</a></li>*/
 /*               <li><a href="rulechanges">Rule Changes</a></li>*/
 /*               <li><a href="board">Board of Directors</a></li>*/
-/*               <li><a href="#">Committees</a></li>*/
-/*               <li><a href="#">Constitution / Bylaws</a></li>*/
-/*               <li><a href="#">Social Media Policy</a></li>*/
+/*               <li><a href="committees">Committees</a></li>*/
+/*               <li><a href="constitutionandbylaws">Constitution / Bylaws</a></li>*/
+/*               <li><a href="socialmediapolicies">Social Media Policy</a></li>*/
 /*               <li><a href="#">Schools / Leagues / Teams</a></li>*/
 /*               <li><a href="#">Game Fees</a></li>*/
 /*               <li><a href="#">Evaluations</a></li>*/
@@ -152,3 +153,4 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
 /* */
 /* <main>*/
 /* <div class="container">*/
+/* */
