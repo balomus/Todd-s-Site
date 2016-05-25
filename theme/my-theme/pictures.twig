@@ -1,0 +1,19 @@
+{% include '_header.twig' %}
+
+<h1 class="center">Pictures</h1>
+
+<div class="row">
+
+    {% setcontent pictures = "picture" %}
+
+    {% for picture in pictures %}
+        {% for image in picture.imagelist %}
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <a href="{{ imageinfo(image.filename).url }}"><img src="{{ image.filename|image }}" class="img-responsive limit"></a>
+            </div>
+        {% endfor %}
+    {% endfor %}
+
+</div>
+
+{% include '_footer.twig' %}

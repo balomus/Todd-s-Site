@@ -61,11 +61,11 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
               <li><a href=\"committees\">Committees</a></li>
               <li><a href=\"constitutionandbylaws\">Constitution / Bylaws</a></li>
               <li><a href=\"socialmediapolicies\">Social Media Policy</a></li>
-              <li><a href=\"#\">Schools / Leagues / Teams</a></li>
-              <li><a href=\"#\">Game Fees</a></li>
-              <li><a href=\"#\">Evaluations</a></li>
-              <li><a href=\"#\">Awards</a></li>
-              <li><a href=\"#\">Pictures</a></li>
+              <li><a href=\"schoolsandteams\">Schools / Leagues / Teams</a></li>
+              <li><a href=\"gamefees\">Game Fees</a></li>
+              <li><a href=\"evaluations\">Evaluations</a></li>
+              <li><a href=\"awards\">Awards</a></li>
+              <li><a href=\"pictures\">Pictures</a></li>
               <li><a href=\"#\">Application / Registration</a></li>
               <li><a href=\"#\">Links</a></li>
             </ul>
@@ -137,11 +137,11 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
 /*               <li><a href="committees">Committees</a></li>*/
 /*               <li><a href="constitutionandbylaws">Constitution / Bylaws</a></li>*/
 /*               <li><a href="socialmediapolicies">Social Media Policy</a></li>*/
-/*               <li><a href="#">Schools / Leagues / Teams</a></li>*/
-/*               <li><a href="#">Game Fees</a></li>*/
-/*               <li><a href="#">Evaluations</a></li>*/
-/*               <li><a href="#">Awards</a></li>*/
-/*               <li><a href="#">Pictures</a></li>*/
+/*               <li><a href="schoolsandteams">Schools / Leagues / Teams</a></li>*/
+/*               <li><a href="gamefees">Game Fees</a></li>*/
+/*               <li><a href="evaluations">Evaluations</a></li>*/
+/*               <li><a href="awards">Awards</a></li>*/
+/*               <li><a href="pictures">Pictures</a></li>*/
 /*               <li><a href="#">Application / Registration</a></li>*/
 /*               <li><a href="#">Links</a></li>*/
 /*             </ul>*/

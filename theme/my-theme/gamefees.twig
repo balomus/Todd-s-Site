@@ -1,0 +1,14 @@
+{% include '_header.twig' %}
+
+<h1 class="center">Game Fees</h1>
+
+{% setcontent gamefees = "gamefee" %}
+
+{% for gamefee in gamefees %}
+
+<h2>{{ gamefee.sport }}</h2>
+<p>{{ gamefee.content }}</p>
+
+{% endfor %}
+
+{% include '_footer.twig' %}

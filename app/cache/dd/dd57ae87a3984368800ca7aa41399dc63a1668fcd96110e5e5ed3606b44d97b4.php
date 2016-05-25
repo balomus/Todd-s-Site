@@ -19,8 +19,8 @@ class __TwigTemplate_3650d4b5d6f35ff9d2e379065c649cf508d34c1fa0f9d222e2cde227023
         $this->loadTemplate("_header.twig", "clinicsandmeetings.twig", 1)->display($context);
         // line 2
         echo "
-<h1 class=\"center\"><a href=\"#Basketball\">Basketball Clinics/Meetings</a></h1>
-<h1 class=\"center\"><a href=\"#Football\">Football Clinics/Meetings</a></h1>
+<h1 class=\"center\"><a href=\"#Basketball\"><i class=\"icon-nba\"></i> Basketball Clinics/Meetings</a></h1>
+<h1 class=\"center\"><a href=\"#Football\"><i class=\"icon-nfl\"></i> Football Clinics/Meetings</a></h1>
 
 <!-- Basketball -->
 <h2 id=\"Basketball\">Basketball</h2>
@@ -215,8 +215,8 @@ class __TwigTemplate_3650d4b5d6f35ff9d2e379065c649cf508d34c1fa0f9d222e2cde227023
 }
 /* {% include '_header.twig' %}*/
 /* */
-/* <h1 class="center"><a href="#Basketball">Basketball Clinics/Meetings</a></h1>*/
-/* <h1 class="center"><a href="#Football">Football Clinics/Meetings</a></h1>*/
+/* <h1 class="center"><a href="#Basketball"><i class="icon-nba"></i> Basketball Clinics/Meetings</a></h1>*/
+/* <h1 class="center"><a href="#Football"><i class="icon-nfl"></i> Football Clinics/Meetings</a></h1>*/
 /* */
 /* <!-- Basketball -->*/
 /* <h2 id="Basketball">Basketball</h2>*/

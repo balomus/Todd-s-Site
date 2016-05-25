@@ -18,8 +18,12 @@ class __TwigTemplate_7a4ebff3c15fe09e40cfc1c971e02aa4a1ce9456d50b124de31cb94c2bd
         // line 1
         $this->loadTemplate("_header.twig", "clinicsandmeetings.twig", 1)->display($context);
         // line 2
-        echo "<!-- Basketball -->
-<h2>Basketball</h2>
+        echo "
+<h1 class=\"center\"><a href=\"#Basketball\"><i class=\"icon-nba\"></i> Basketball Clinics/Meetings</a></h1>
+<h1 class=\"center\"><a href=\"#Football\"><i class=\"icon-nfl\"></i> Football Clinics/Meetings</a></h1>
+
+<!-- Basketball -->
+<h2 id=\"Basketball\">Basketball</h2>
 
 <div class=\"table-responsive\">
     <table class=\"table table-striped\">
@@ -34,65 +38,78 @@ class __TwigTemplate_7a4ebff3c15fe09e40cfc1c971e02aa4a1ce9456d50b124de31cb94c2bd
         </thead>
 
         ";
-        // line 17
+        // line 21
         $template_storage = new Bolt\Storage($context['app']);
         $context['clinicsandmeetings'] =         $template_storage->getContent("clinicormeeting", array() );
-        // line 18
+        // line 22
         echo "
         ";
-        // line 19
+        // line 23
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["clinicsandmeetings"]) ? $context["clinicsandmeetings"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["clinicormeeting"]) {
-            // line 20
+            // line 24
             echo "
         ";
-            // line 21
+            // line 25
             if (($this->getAttribute($context["clinicormeeting"], "sport", array()) == "Basketball")) {
-                // line 22
+                // line 26
                 echo "
         <tr>
             <td><p>";
-                // line 24
+                // line 28
                 echo twig_escape_filter($this->env, $this->getAttribute($context["clinicormeeting"], "meeting", array()), "html", null, true);
                 echo "</p></td>
             <td><p>";
-                // line 25
+                // line 29
                 echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["clinicormeeting"], "date_and_time", array()), "m/d/Y"), "html", null, true);
                 echo "</p></td>
             <td><p>";
-                // line 26
+                // line 30
                 echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["clinicormeeting"], "date_and_time", array()), "g:ia"), "html", null, true);
                 echo "</p></td>
             <td><p>";
-                // line 27
+                // line 31
                 echo twig_escape_filter($this->env, $this->getAttribute($context["clinicormeeting"], "location", array()), "html", null, true);
                 echo "</p></td>
             <td><p>";
-                // line 28
+                // line 32
                 echo twig_escape_filter($this->env, $this->getAttribute($context["clinicormeeting"], "site", array()), "html", null, true);
                 echo "</p></td>
         </tr>
 
         ";
             }
-            // line 32
+            // line 36
             echo "
         ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['clinicormeeting'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 34
-        echo "        
+        // line 38
+        echo "
     </table>
 </div>
 
 <!-- END Basketball -->
 
+<ul>
+    <li>The Local Association meeting is required by the association.</li>
+    <li>The State Clinic is required in order to officiate post-season play.</li>
+    <li>You must attend all six (6) clinics to qualify for play-offs, unless an appeal is approved by the board. </li>
+    <li>A sign-up sheet will be forwarded to each clinician by the Regional Supervisor prior to the meeting.</li>
+    <li>All meetings will start promptly at the time designated, thus don't be late!  The maximum length of each meeting is two (2) hours, but in most cases will end much sooner.  Please plan accordingly.</li>
+    <li>You may attend a local clinic in your area, or at another location, as long as it is attended within that week. Attending two sites in one week, does not give you credit for two clinics!!!</li>
+    <li>Clinicians for each clinic will be assigned at a later date by the Regional Supervisor.</li>
+    <li>Materials and information covered at each clinic will be decided by the Regional Supervisor.</li>
+    <li>Each local clinic site will cover the same information on the same dates.</li>
+    <li>Local clinic dates and times may not be changed.  Locations may be changed with approval from the board.</li>
+</ul>
+
 <!-- Football -->
 
-<h2>Football</h2>
+<h2 id=\"Football\">Football</h2>
 
 <div class=\"table-responsive\">
     <table class=\"table table-striped\">
@@ -107,57 +124,57 @@ class __TwigTemplate_7a4ebff3c15fe09e40cfc1c971e02aa4a1ce9456d50b124de31cb94c2bd
         </thead>
 
         ";
-        // line 56
+        // line 73
         $template_storage = new Bolt\Storage($context['app']);
         $context['clinicsandmeetings'] =         $template_storage->getContent("clinicormeeting", array() );
-        // line 57
+        // line 74
         echo "
         ";
-        // line 58
+        // line 75
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["clinicsandmeetings"]) ? $context["clinicsandmeetings"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["clinicormeeting"]) {
-            // line 59
+            // line 76
             echo "
         ";
-            // line 60
+            // line 77
             if (($this->getAttribute($context["clinicormeeting"], "sport", array()) == "Football")) {
-                // line 61
+                // line 78
                 echo "
         <tr>
             <td><p>";
-                // line 63
+                // line 80
                 echo twig_escape_filter($this->env, $this->getAttribute($context["clinicormeeting"], "meeting", array()), "html", null, true);
                 echo "</p></td>
             <td><p>";
-                // line 64
+                // line 81
                 echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["clinicormeeting"], "date_and_time", array()), "m/d/Y"), "html", null, true);
                 echo "</p></td>
             <td><p>";
-                // line 65
+                // line 82
                 echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["clinicormeeting"], "date_and_time", array()), "g:ia"), "html", null, true);
                 echo "</p></td>
             <td><p>";
-                // line 66
+                // line 83
                 echo twig_escape_filter($this->env, $this->getAttribute($context["clinicormeeting"], "location", array()), "html", null, true);
                 echo "</p></td>
             <td><p>";
-                // line 67
+                // line 84
                 echo twig_escape_filter($this->env, $this->getAttribute($context["clinicormeeting"], "site", array()), "html", null, true);
                 echo "</p></td>
         </tr>
 
         ";
             }
-            // line 71
+            // line 88
             echo "
         ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['clinicormeeting'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 73
-        echo "        
+        // line 90
+        echo "
     </table>
 </div>
 
@@ -177,8 +194,8 @@ class __TwigTemplate_7a4ebff3c15fe09e40cfc1c971e02aa4a1ce9456d50b124de31cb94c2bd
 </ul>
 
 ";
-        // line 92
-        $this->loadTemplate("_footer.twig", "clinicsandmeetings.twig", 92)->display($context);
+        // line 109
+        $this->loadTemplate("_footer.twig", "clinicsandmeetings.twig", 109)->display($context);
     }
 
     public function getTemplateName()
@@ -193,12 +210,16 @@ class __TwigTemplate_7a4ebff3c15fe09e40cfc1c971e02aa4a1ce9456d50b124de31cb94c2bd
 
     public function getDebugInfo()
     {
-        return array (  181 => 92,  160 => 73,  153 => 71,  146 => 67,  142 => 66,  138 => 65,  134 => 64,  130 => 63,  126 => 61,  124 => 60,  121 => 59,  117 => 58,  114 => 57,  111 => 56,  87 => 34,  80 => 32,  73 => 28,  69 => 27,  65 => 26,  61 => 25,  57 => 24,  53 => 22,  51 => 21,  48 => 20,  44 => 19,  41 => 18,  38 => 17,  21 => 2,  19 => 1,);
+        return array (  198 => 109,  177 => 90,  170 => 88,  163 => 84,  159 => 83,  155 => 82,  151 => 81,  147 => 80,  143 => 78,  141 => 77,  138 => 76,  134 => 75,  131 => 74,  128 => 73,  91 => 38,  84 => 36,  77 => 32,  73 => 31,  69 => 30,  65 => 29,  61 => 28,  57 => 26,  55 => 25,  52 => 24,  48 => 23,  45 => 22,  42 => 21,  21 => 2,  19 => 1,);
     }
 }
 /* {% include '_header.twig' %}*/
+/* */
+/* <h1 class="center"><a href="#Basketball"><i class="icon-nba"></i> Basketball Clinics/Meetings</a></h1>*/
+/* <h1 class="center"><a href="#Football"><i class="icon-nfl"></i> Football Clinics/Meetings</a></h1>*/
+/* */
 /* <!-- Basketball -->*/
-/* <h2>Basketball</h2>*/
+/* <h2 id="Basketball">Basketball</h2>*/
 /* */
 /* <div class="table-responsive">*/
 /*     <table class="table table-striped">*/
@@ -229,15 +250,28 @@ class __TwigTemplate_7a4ebff3c15fe09e40cfc1c971e02aa4a1ce9456d50b124de31cb94c2bd
 /*         {% endif %}*/
 /* */
 /*         {% endfor %}*/
-/*         */
+/* */
 /*     </table>*/
 /* </div>*/
 /* */
 /* <!-- END Basketball -->*/
 /* */
+/* <ul>*/
+/*     <li>The Local Association meeting is required by the association.</li>*/
+/*     <li>The State Clinic is required in order to officiate post-season play.</li>*/
+/*     <li>You must attend all six (6) clinics to qualify for play-offs, unless an appeal is approved by the board. </li>*/
+/*     <li>A sign-up sheet will be forwarded to each clinician by the Regional Supervisor prior to the meeting.</li>*/
+/*     <li>All meetings will start promptly at the time designated, thus don't be late!  The maximum length of each meeting is two (2) hours, but in most cases will end much sooner.  Please plan accordingly.</li>*/
+/*     <li>You may attend a local clinic in your area, or at another location, as long as it is attended within that week. Attending two sites in one week, does not give you credit for two clinics!!!</li>*/
+/*     <li>Clinicians for each clinic will be assigned at a later date by the Regional Supervisor.</li>*/
+/*     <li>Materials and information covered at each clinic will be decided by the Regional Supervisor.</li>*/
+/*     <li>Each local clinic site will cover the same information on the same dates.</li>*/
+/*     <li>Local clinic dates and times may not be changed.  Locations may be changed with approval from the board.</li>*/
+/* </ul>*/
+/* */
 /* <!-- Football -->*/
 /* */
-/* <h2>Football</h2>*/
+/* <h2 id="Football">Football</h2>*/
 /* */
 /* <div class="table-responsive">*/
 /*     <table class="table table-striped">*/
@@ -268,7 +302,7 @@ class __TwigTemplate_7a4ebff3c15fe09e40cfc1c971e02aa4a1ce9456d50b124de31cb94c2bd
 /*         {% endif %}*/
 /* */
 /*         {% endfor %}*/
-/*         */
+/* */
 /*     </table>*/
 /* </div>*/
 /* */

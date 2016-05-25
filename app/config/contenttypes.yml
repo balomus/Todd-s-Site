@@ -196,3 +196,112 @@ SocialMediaPolicies:
         content:
             type: html
             class: large
+
+#Teams
+
+Teams:
+    name: Schools and Teams
+    singular_name: School and Team
+    slug: schoolsandteams
+    singular_slug: schoolandteam
+    listing_template: schoolsandteams.twig
+    default_status: published
+    fields:
+        type_of_school:
+            type: select
+            values: [ High_School, Elem/Middle_School, Charter/Private_School, Youth_League ]
+        school:
+            type: text
+            class: large
+        address:
+            type: text
+            class: large
+        city_state_zip:
+            type: text
+            class: large
+        phone_number:
+            type: text
+            class: large
+    sort: school ASC
+
+#GameFees
+
+GameFees:
+    name: Game Fees
+    singular_name: Game Fee
+    slug: gamefees
+    singular_slug: gamefee
+    listing_template: gamefees.twig
+    default_status: published
+    fields:
+        sport:
+            type: select
+            values: [ Football, Basketball ]
+        content:
+            type: html
+            class: large
+    sort: sport ASC
+
+#Evaluations
+Evaluations:
+    name: Evaluations
+    singular_name: Evaluation
+    slug: evaluations
+    singular_slug: evaluation
+    listing_template: evaluations.twig
+    default_status: published
+    fields:
+        name:
+            type: text
+            class: large
+
+#Awards
+Awards:
+    name: Awards
+    singular_name: Award
+    slug: awards
+    singular_slug: award
+    listing_template: awards.twig
+    default_status: published
+    fields:
+        title:
+            type: text
+            class: large
+        content:
+            type: html
+            class: large
+        sport:
+            type: select
+            values: [ Football, Basketball ]
+    sort: sport ASC
+
+#Pictures
+Pictures:
+    name: Pictures
+    singular_name: Picture
+    slug: pictures
+    singular_slug: picture
+    listing_template: pictures.twig
+    record_template: picture.twig
+    default_status: published
+    fields:
+        imagelist:
+            type: imagelist
+
+#Links
+Links:
+    name: Links
+    singular_name: Link
+    slug: links
+    singular_slug: link
+    listing_template: links.twig
+    default_status: published
+    fields:
+        name:
+            type: text
+            class: large
+        url:
+            type: text
+            class: large
+        image:
+            type: image

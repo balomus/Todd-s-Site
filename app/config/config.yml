@@ -284,7 +284,7 @@ wysiwyg:
     align: false             # Adds buttons for 'align left', 'align right', etc.
     subsuper: false          # Adds buttons for subscript and superscript, using `<sub>` and `<sup>`.
     embed: false             # Allows the user to insert embedded video's from Youtube, Vimeo, etc.
-    underline: false         # Adds a button to underline text, using the `<u>`-tag.
+    underline: true          # Adds a button to underline text, using the `<u>`-tag.
     ruler: false             # Adds a button to add a horizontal ruler, using the `<hr>`-tag.
     strike: false            # Adds a button to add stikethrough, using the `<s>`-tag.
     blockquote: false        # Allows the user to insert blockquotes using the `<blockquote>`-tag.

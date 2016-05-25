@@ -1,0 +1,46 @@
+{% include '_header.twig' %}
+
+<h1 class="center"><a href="#Basketball"><i class="icon-nba"></i> Basketball Awards</a></h1>
+<h1 class="center"><a href="#Football"><i class="icon-nfl"></i> Football Awards</a></h1>
+
+<h2 id="Basketball" class="center">Basketball</h2>
+
+
+<div class="row">
+    {% setcontent awards = "award" %}
+
+    {% for award in awards %}
+
+    {% if award.sport == 'Basketball' %}
+
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <h3>{{ award.title }}</h3>
+        <p>{{ award.content }}</p>
+    </div>
+    {% endif %}
+
+    {% endfor %}
+
+</div>
+
+<div class="row">
+
+    <h2 id="Football" class="center">Football</h2>
+
+    {% setcontent awards = "award" %}
+
+    {% for award in awards %}
+
+    {% if award.sport == 'Football' %}
+
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <h3>{{ award.title }}</h3>
+        <p>{{ award.content }}</p>
+    </div>
+    {% endif %}
+
+    {% endfor %}
+
+</div>
+
+{% include '_footer.twig' %}

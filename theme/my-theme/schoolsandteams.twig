@@ -1,0 +1,98 @@
+{% include '_header.twig' %}
+
+<h1 class="center"><a href="#HighSchools">High Schools</a></h1>
+<h1 class="center"><a href="#ElementaryMiddleSchools">Elementary / Middle Schools</a><h1>
+<h1 class="center"><a href="#CharterPrivateSchools">Charter & Private Schools</a></h1>
+<h1 class="center"><a href="#YouthLeague">Youth League</a></h1>
+
+{% setcontent schoolsandteams = "schoolandteam" %}
+
+<!-- High Schools -->
+<h2 id="HighSchools" class="center">High Schools</h2>
+
+<div class="row">
+
+  {% for schoolandteam in schoolsandteams %}
+
+  {% if schoolandteam.type_of_school == 'High_School' %}
+
+  <div class="col-xs-8 col-sm-4 col-md-3 col-xs-offset-2 col-sm-offset-0 col-md-offset-0">
+    <p>{{ schoolandteam.school }}
+    <br>{{ schoolandteam.address }}
+    <br>{{ schoolandteam.city_state_zip }}
+    <br>{{ schoolandteam.phone_number }}</p>
+  </div>
+  {% endif %}
+
+  {% endfor %}
+
+</div>
+<!-- END High Schools -->
+
+<!-- Elementary / Middle Schools -->
+<h2 id="ElementaryMiddleSchools" class="center">Elementary / Middle Schools</h2>
+
+<div class="row">
+
+  {% for schoolandteam in schoolsandteams %}
+
+  {% if schoolandteam.type_of_school == 'Elem/Middle_School' %}
+
+  <div class="col-xs-8 col-sm-4 col-md-3 col-xs-offset-2 col-sm-offset-0 col-md-offset-0">
+    <p>{{ schoolandteam.school }}
+    <br>{{ schoolandteam.address }}
+    <br>{{ schoolandteam.city_state_zip }}
+    <br>{{ schoolandteam.phone_number }}</p>
+  </div>
+  {% endif %}
+
+  {% endfor %}
+
+</div>
+<!-- END Elementary / Middle Schools -->
+
+<!-- Charter & Private Schools -->
+<h2 id="CharterPrivateSchools" class="center">Charter & Private Schools</h2>
+
+<div class="row">
+
+  {% for schoolandteam in schoolsandteams %}
+
+  {% if schoolandteam.type_of_school == 'Charter/Private_School' %}
+
+  <div class="col-xs-8 col-sm-4 col-md-3 col-xs-offset-2 col-sm-offset-0 col-md-offset-0">
+    <p>{{ schoolandteam.school }}
+    <br>{{ schoolandteam.address }}
+    <br>{{ schoolandteam.city_state_zip }}
+    <br>{{ schoolandteam.phone_number }}</p>
+  </div>
+  {% endif %}
+
+  {% endfor %}
+
+</div>
+<!-- END Charter & Private Schools -->
+
+<!-- Youth League -->
+<h2 id="YouthLeague" class="center">Youth League</h2>
+
+<div class="row">
+
+  {% for schoolandteam in schoolsandteams %}
+
+  {% if schoolandteam.type_of_school == 'Youth_League' %}
+
+  <div class="col-xs-8 col-sm-4 col-md-3 col-xs-offset-2 col-sm-offset-0 col-md-offset-0">
+    <p>{{ schoolandteam.school }}
+    <br>{{ schoolandteam.address }}
+    <br>{{ schoolandteam.city_state_zip }}
+    <br>{{ schoolandteam.phone_number }}</p>
+  </div>
+  {% endif %}
+
+  {% endfor %}
+
+</div>
+<!-- END Youth League -->
+
+{% include '_footer.twig' %}

@@ -1,0 +1,73 @@
+{% include '_header.twig' %}
+
+<h1 class="center">Officials Evaluation</h1>
+
+<form action="MAILTO:balom.us@gmail.com" method="post" enctyp="text/plain">
+
+    <fieldset class="form-group">
+        <label for="date">Date</label>
+        <input type="text" class="form-control" id="date" placeholder="Today's Date (ex: 5/22/2016)">
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label for="referee">Referee / Observer</label>
+        <input type="text" class="form-control" id="referee" placeholder="Referee or Observer's Name">
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label for="homeTeam">Home Team</label>
+        <input type="text" class="form-control" id="homeTeam" placeholder="Home Team">
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label for="visitingTeam">Visiting Team</label>
+        <input type="text" class="form-control" id="visitingTeam" placeholder="Visiting Team">
+    </fieldset>
+
+    <label for="sport">Sport</label>
+    <div>
+        <label class="radio-inline">
+            <input type="radio" name="sport" id="football" value="football">Football
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="sport" id="basketball" value="basketball">Basketball
+        </label>
+    </div>
+    <br>
+
+    <label for="level">Level</label>
+    <div class="checkbox" name="level">
+        <label>
+            <input type="checkbox" value="">Varsity
+        </label>
+    </div>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" value="">JV
+        </label>
+    </div>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" value="">Middle School
+        </label>
+    </div>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" value="">Elementary
+        </label>
+    </div>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" value="">Youth League
+        </label>
+    </div>
+
+    <input type="submit" value="Send">
+
+</form>
+
+{% include '_footer.twig' %}
