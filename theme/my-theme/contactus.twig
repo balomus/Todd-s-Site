@@ -1,0 +1,33 @@
+{% include '_header.twig' %}
+
+<h1>Contact Us</h1>
+
+{% setcontent contactus = "contact" %}
+
+{% for contact in contactus %}
+<form method="post" action="form-to-email.php">
+
+    <label for="{{ contact.name }}">{{ contact.name }}</label>
+    <input type="text" class="form-control" name="{{ contact.name }}">
+
+    <label for="{{ contact.email }}">{{ contact.email }}</label>
+    <input type="text" class="form-control" name="{{ contact.email }}">
+
+    <label for="{{ contact.phone }}">{{ contact.phone }}</label>
+    <input type="text" class="form-control" name="{{ contact.phone }}">
+
+    <label for="{{ contact.subject }}">{{ contact.subject }}</label>
+    <input type="text" class="form-control" name="{{ contact.subect }}">
+
+    <label for="{{ contact.message }}">{{ contact.message }}</label>
+    <input type="text" class="form-control" name="{{ contact.message }}">
+
+    <br>
+
+    <input type="submit" value="Send">
+
+</form>
+
+{% endfor %}
+
+{% include '_footer.twig' %}

@@ -1,73 +1,93 @@
 {% include '_header.twig' %}
 
+<script language="JavaScript" src="{{ paths.theme }}jss/gen_validator31.js" type="text/javascript"></script>
+
 <h1 class="center">Officials Evaluation</h1>
 
-<form action="MAILTO:balom.us@gmail.com" method="post" enctyp="text/plain">
+{% setcontent evaluations = "evaluation" %}
 
-    <fieldset class="form-group">
-        <label for="date">Date</label>
-        <input type="text" class="form-control" id="date" placeholder="Today's Date (ex: 5/22/2016)">
-    </fieldset>
+{% for evaluation in evaluations %}
 
-    <fieldset class="form-group">
-        <label for="referee">Referee / Observer</label>
-        <input type="text" class="form-control" id="referee" placeholder="Referee or Observer's Name">
-    </fieldset>
+<form method="post" action="form-to-email.php">
 
-    <fieldset class="form-group">
-        <label for="homeTeam">Home Team</label>
-        <input type="text" class="form-control" id="homeTeam" placeholder="Home Team">
-    </fieldset>
+    <label for="{{ evaluation.date }}">{{ evaluation.date }}</label>
+    <input type="text" class="form-control" name="{{ evaluation.date }}">
 
-    <fieldset class="form-group">
-        <label for="visitingTeam">Visiting Team</label>
-        <input type="text" class="form-control" id="visitingTeam" placeholder="Visiting Team">
-    </fieldset>
+    <label for="{{ evaluation.referee }}">{{ evaluation.referee }}</label>
+    <input type="text" class="form-control" name="{{ evaluation.referee }}">
 
+    <label for="{{ evaluation.hometeam }}">{{ evaluation.hometeam }}</label>
+    <input type="text" class="form-control" name="{{ evaluation.hometeam }}">
+
+    <label for="{{ evaluation.visitingteam }}">{{ evaluation.visitingteam }}</label>
+    <input type="text" class="form-control" name="{{ evaluation.visitingteam }}">
+
+    <label for="sport">Sport:</label><br>
+    <input type="checkbox" name="{{ evaluation.football }}" value="{{ evaluation.football }}"> {{ evaluation.football }}<br>
+    <input type="checkbox" name="{{ evaluation.basketball }}" value="{{ evaluation.basketball }}"> {{ evaluation.basketball }}<br>
+
+    <label for="level">Level:</label><br>
+
+    <input type="checkbox" name="{{ evaluation.varsity }}" value="{{ evaluation.varsity }}"> {{ evaluation.varsity }}<br>
+    <input type="checkbox" name="{{ evaluation.jv }}" value="{{ evaluation.jv }}"> {{ evaluation.jv }}<br>
+    <input type="checkbox" name="{{ evaluation.middleschool }}" value="{{ evaluation.middleschool }}"> {{ evaluation.middleschool }}<br>
+    <input type="checkbox" name="{{ evaluation.elementary }}" value="{{ evaluation.elementary }}"> {{ evaluation.elementary }}<br>
+    <input type="checkbox" name="{{ evaluation.youthleague }}" value="{{ evaluation.youthleague }}"> {{ evaluation.youthleague }}<br>
+
+    <div class="centered">
+        <p>{{ evaluation.scale }}</p>
+    </div>
+
+    <label for="{{ evaluation.appearance }}">{{ evaluation.appearance }} - {{ evaluation.appearancedesc }}</label>
+    <input type="text" class="form-control" name="{{ evaluation.appearance }}">
+
+    <label for="{{ evaluation.professionalism }}">{{ evaluation.professionalism }} - {{ evaluation.professionalismdesc }}</label>
+    <input type="text" class="form-control" name="{{ evaluation.professionalism }}">
+
+    <label for="{{ evaluation.gamemanagement }}">{{ evaluation.gamemanagement }} - {{ evaluation.gamemanagementdesc }}</label>
+    <input type="text" class="form-control" name="{{ evaluation.gamemanagement }}">
+
+    <label for="{{ evaluation.whistle }}">{{ evaluation.whistle }} - {{ evaluation.whistledesc }}</label>
+    <input type="text" class="form-control" name="{{ evaluation.whistle }}">
+
+    <label for="{{ evaluation.signals }}">{{ evaluation.signals }} - {{ evaluation.signalsdesc }}</label>
+    <input type="text" class="form-control" name="{{ evaluation.signalsdesc }}">
+
+    <label for="{{ evaluation.position }}">{{ evaluation.position }} - {{ evaluation.positiondesc }}</label>
+    <input type="text" class="form-control" name="{{ evaluation.position }}">
+
+    <label for="{{ evaluation.callselection }}">{{ evaluation.callselection }} - {{ evaluation.callselectiondesc }}</label>
+    <input type="text" class="form-control" name="{{ evaluation.callselection }}">
+
+    <label for="{{ evaluation.communication }}">{{ evaluation.communication }} - {{ evaluation.communicationdesc }}</label>
+    <input type="text" class="form-control" name="{{ evaluation.communication }}">
+
+    <label for="{{ evaluation.rulesknowledge }}">{{ evaluation.rulesknowledge }} - {{ evaluation.rulesknowledgedesc }}</label>
+    <input type="text" class="form-control" name="{{ evaluation.rulesknowledge }}">
+
+    <label for="{{ evaluation.comments }}">{{ evaluation.comments }}</label>
+    <input type="text" class="form-control" name="{{ evaluation.comments }}">
+
+</form>
+
+{% endfor %}
+
+<!-- <form method="post" action="form-to-email.php">
+
+    <label for="date">Date</label>
+    <input type="text" class="form-control" name="date" placeholder="Today's Date (ex: 5/22/2016)">
+    <label for="referee">Referee / Observer</label>
+    <input type="text" class="form-control" id="referee" placeholder="Referee or Observer's Name">
+    <label for="homeTeam">Home Team</label>
+    <input type="text" class="form-control" id="homeTeam" placeholder="Home Team">
+    <label for="visitingTeam">Visiting Team</label>
+    <input type="text" class="form-control" id="visitingTeam" placeholder="Visiting Team">
     <label for="sport">Sport</label>
-    <div>
-        <label class="radio-inline">
-            <input type="radio" name="sport" id="football" value="football">Football
-        </label>
-        <label class="radio-inline">
-            <input type="radio" name="sport" id="basketball" value="basketball">Basketball
-        </label>
-    </div>
+
     <br>
-
-    <label for="level">Level</label>
-    <div class="checkbox" name="level">
-        <label>
-            <input type="checkbox" value="">Varsity
-        </label>
-    </div>
-
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">JV
-        </label>
-    </div>
-
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">Middle School
-        </label>
-    </div>
-
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">Elementary
-        </label>
-    </div>
-
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="">Youth League
-        </label>
-    </div>
 
     <input type="submit" value="Send">
 
-</form>
+</form> -->
 
 {% include '_footer.twig' %}

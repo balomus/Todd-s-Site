@@ -65,9 +65,9 @@ class __TwigTemplate_335b7d5f06f39f506161780df2fccc8285dd6bb2b68f3f8661f729332c5
               <li><a href=\"gamefees\">Game Fees</a></li>
               <li><a href=\"evaluations\">Evaluations</a></li>
               <li><a href=\"awards\">Awards</a></li>
-              <li><a href=\"#\">Pictures</a></li>
+              <li><a href=\"pictures\">Pictures</a></li>
               <li><a href=\"#\">Application / Registration</a></li>
-              <li><a href=\"#\">Links</a></li>
+              <li><a href=\"links\">Links</a></li>
             </ul>
         </ul>
       </div>
@@ -141,9 +141,9 @@ class __TwigTemplate_335b7d5f06f39f506161780df2fccc8285dd6bb2b68f3f8661f729332c5
 /*               <li><a href="gamefees">Game Fees</a></li>*/
 /*               <li><a href="evaluations">Evaluations</a></li>*/
 /*               <li><a href="awards">Awards</a></li>*/
-/*               <li><a href="#">Pictures</a></li>*/
+/*               <li><a href="pictures">Pictures</a></li>*/
 /*               <li><a href="#">Application / Registration</a></li>*/
-/*               <li><a href="#">Links</a></li>*/
+/*               <li><a href="links">Links</a></li>*/
 /*             </ul>*/
 /*         </ul>*/
 /*       </div>*/

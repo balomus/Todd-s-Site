@@ -51,7 +51,7 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
           <li><a href=\"/bolt\">Home</a></li>
           <li><a href=\"news\">News</a></li>
           <li><a href=\"clinicsmeetings\">Clinics / Meetings</a></li>
-          <li><a href=\"#\">Contact Us</a></li>
+          <li><a href=\"contactus\">Contact Us</a></li>
           <li class=\"dropdown\">
             <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">More <span class=\"caret\"></span></a>
             <ul class=\"dropdown-menu\">
@@ -67,7 +67,7 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
               <li><a href=\"awards\">Awards</a></li>
               <li><a href=\"pictures\">Pictures</a></li>
               <li><a href=\"#\">Application / Registration</a></li>
-              <li><a href=\"#\">Links</a></li>
+              <li><a href=\"links\">Links</a></li>
             </ul>
         </ul>
       </div>
@@ -127,7 +127,7 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
 /*           <li><a href="/bolt">Home</a></li>*/
 /*           <li><a href="news">News</a></li>*/
 /*           <li><a href="clinicsmeetings">Clinics / Meetings</a></li>*/
-/*           <li><a href="#">Contact Us</a></li>*/
+/*           <li><a href="contactus">Contact Us</a></li>*/
 /*           <li class="dropdown">*/
 /*             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>*/
 /*             <ul class="dropdown-menu">*/
@@ -143,7 +143,7 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
 /*               <li><a href="awards">Awards</a></li>*/
 /*               <li><a href="pictures">Pictures</a></li>*/
 /*               <li><a href="#">Application / Registration</a></li>*/
-/*               <li><a href="#">Links</a></li>*/
+/*               <li><a href="links">Links</a></li>*/
 /*             </ul>*/
 /*         </ul>*/
 /*       </div>*/

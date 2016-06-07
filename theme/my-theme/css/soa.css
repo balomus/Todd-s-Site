@@ -1,31 +1,39 @@
+.centered {
+    text-align: center;
+}
 .header-row {
-	font-style: italic;
+    font-style: italic;
 }
 
 p.under {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .header-image{
-	background: url("http://res.cloudinary.com/dbnugenbb/image/upload/v1458915250/apple-desk-laptop-working1280_zesrlm.jpg") no-repeat center center fixed;
-	background-size: cover;
+    background: url("http://res.cloudinary.com/dbnugenbb/image/upload/v1458915250/apple-desk-laptop-working1280_zesrlm.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 footer {
-	padding-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 img.centered {
-	margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1.center {
-	text-align: center;
+    text-align: center;
 }
 
 h2.center {
-	text-align: center;
+    text-align: center;
+}
+
+div.fixed-height {
+    height: 200px;
+    background-color: blue;
 }
 
 @font-face {
@@ -49,19 +57,24 @@ h2.center {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
 }
+
 .icon-nfl:before {
     content: "\61";
 }
+
 .icon-nhl:before {
     content: "\62";
 }
+
 .icon-nba:before {
     content: "\63";
 }
+
 .icon-mlb:before {
     content: "\64";
 }
-.limit {
-		width: 100%;
-		height: auto;
+
+.logo {
+        width: 100%
+        height: auto;
 }

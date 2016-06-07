@@ -251,7 +251,97 @@ Evaluations:
     listing_template: evaluations.twig
     default_status: published
     fields:
-        name:
+        date:
+            type: text
+            class: large
+        referee:
+            type: text
+            class: large
+        hometeam:
+            type: text
+            class: large
+        visitingteam:
+            type: text
+            class: large
+        football:
+            type: text
+            class: large
+        basketball:
+            type: text
+            class: large
+        varsity:
+            type: text
+            class: large
+        jv:
+            type: text
+            class: large
+        middleschool:
+            type: text
+            class: large
+        elementary:
+            type: text
+            class: large
+        youthleague:
+            type: text
+            class: large
+        scale:
+            type: html
+            class: large
+        appearance:
+            type: text
+            class: large
+        appearancedesc:
+            type: text
+            class: large
+        professionalism:
+            type: text
+            class: large
+        professionalismdesc:
+            type: text
+            class: large
+        gamemanagement:
+            type: text
+            class: large
+        gamemanagementdesc:
+            type: text
+            class: large
+        whistle:
+            type: text
+            class: large
+        whistledesc:
+            type: text
+            class: large
+        signals:
+            type: text
+            class: large
+        signalsdesc:
+            type: text
+            class: large
+        position:
+            type: text
+            class: large
+        positiondesc:
+            type: text
+            class: large
+        callselection:
+            type: text
+            class: large
+        callselectiondesc:
+            type: text
+            class: large
+        communication:
+            type: text
+            class: large
+        communicationdesc:
+            type: text
+            class: large
+        rulesknowledge:
+            type: text
+            class: large
+        rulesknowledgedesc:
+            type: text
+            class: large
+        comments:
             type: text
             class: large
 
@@ -305,3 +395,29 @@ Links:
             class: large
         image:
             type: image
+    sort: name ASC
+
+#ContactUs
+ContactUs:
+    name: ContactUs
+    singular_name: Contact
+    slug: contactus
+    singular_slug: contact
+    listing_template: contactus.twig
+    default_status: published
+    fields:
+        name:
+            type: text
+            class: large
+        email:
+            type: text
+            class: large
+        phone:
+            type: text
+            class: large
+        subject:
+            type: text
+            class: large
+        message:
+            type: text
+            class: large
