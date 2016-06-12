@@ -32,11 +32,11 @@ class __TwigTemplate_4114e702464c77f706b9fcc0086ce6c9f92257bba3f11a0652754558947
         foreach ($context['_seq'] as $context["_key"] => $context["home"]) {
             // line 6
             echo "
-<h1>";
+<h1 class=\"center\">";
             // line 7
             echo twig_escape_filter($this->env, $this->getAttribute($context["home"], "title", array()), "html", null, true);
             echo "</h1>
-<p class=\"lead\">";
+<p class=\"lead centered\">";
             // line 8
             echo twig_escape_filter($this->env, $this->getAttribute($context["home"], "subtitle", array()), "html", null, true);
             echo "</p>
@@ -44,7 +44,7 @@ class __TwigTemplate_4114e702464c77f706b9fcc0086ce6c9f92257bba3f11a0652754558947
             // line 9
             echo twig_escape_filter($this->env, $this->env->getExtension('Bolt')->image($this->getAttribute($context["home"], "image", array())), "html", null, true);
             echo "\" class=\"img-responsive\">
-<h2>About SOA</h2>
+<h2 class=\"center\">About SOA</h2>
 <p>";
             // line 11
             echo twig_escape_filter($this->env, $this->getAttribute($context["home"], "mission_statement", array()), "html", null, true);
@@ -83,12 +83,13 @@ class __TwigTemplate_4114e702464c77f706b9fcc0086ce6c9f92257bba3f11a0652754558947
 /* */
 /* {% for home in home %}*/
 /* */
-/* <h1>{{ home.title }}</h1>*/
-/* <p class="lead">{{ home.subtitle }}</p>*/
+/* <h1 class="center">{{ home.title }}</h1>*/
+/* <p class="lead centered">{{ home.subtitle }}</p>*/
 /* <img src="{{ image(home.image) }}" class="img-responsive">*/
-/* <h2>About SOA</h2>*/
+/* <h2 class="center">About SOA</h2>*/
 /* <p>{{ home.mission_statement }}</p>*/
 /* */
 /* {% endfor %}*/
 /* */
 /* {% include '_footer.twig' %}*/
+/* */

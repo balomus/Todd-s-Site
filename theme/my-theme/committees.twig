@@ -5,8 +5,20 @@
 
 {% for committee in committees %}
 
-  <h2>{{ committee.committee }}</h2>
+{% if committee.sport == 'Basketball' %}
+  <h2>{{ committee.committee }} <i class="icon-nba"></i></h2>
 	<p>{{ committee.members }}</p>
+{% endif %}
+
+{% if committee.sport == 'Football' %}
+  <h2>{{ committee.committee }} <i class="icon-nfl"></i></h2>
+	<p>{{ committee.members }}</p>
+{% endif %}
+
+{% if committee.sport == 'Both' %}
+  <h2>{{ committee.committee }} <i class="icon-nba"></i><i class="icon-nfl"></i></h2>
+	<p>{{ committee.members }}</p>
+{% endif %}
 
 {% endfor %}
 

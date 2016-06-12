@@ -1,7 +1,7 @@
 {% include '_header.twig' %}
 
-<h1>News</h1>
-<p class="lead">View all the news articles here.</p>
+<h1 class="center">News</h1>
+<p class="lead centered">View all the news articles here.</p>
 <hr>
 
 {% setcontent news = 'news/latest/3' allowpaging %}
@@ -26,7 +26,5 @@
 {{ pager() }}
 
 <hr>
-
-pagination
 
 {% include '_footer.twig' %}

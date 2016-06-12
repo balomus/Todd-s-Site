@@ -1,27 +1,112 @@
 {% include '_header.twig' %}
 
-<h1>Board</h1>
-<p class="lead">Below are all the current board members.</p>
+<h1 class="center">Board</h1>
+<p class="lead centered">Below are all the current board members.</p>
 <hr>
 
 {% setcontent board = 'board' %}
 
+<h2 class="center">Officials</h2>
+
 {% for boardmember in board %}
+
+{% if boardmember.officals_group == 'Officials' %}
 
 <article>
   <div class="row">
     <div class = "col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-0">
       <img src="{{ image(boardmember.image) }}" alt="{{ boardmember.name }}" class="img-responsive">
     </div>
-  
+
     <div class="col-md-8 col-xs-12">
-      <h2>{{ boardmember.name }}</h2>
+      <h3>{{ boardmember.name }}</h3>
     </div>
     <div class="col-md-8 col-xs-12">
       <p>{{ boardmember.body }}</p>
     </div>
-</div>
+  </div>
 </article>
+<br>
+
+{% endif %}
+
+{% endfor %}
+
+<h2 class="center">School Representatives</h2>
+
+{% for boardmember in board %}
+
+{% if boardmember.officals_group == 'School Representatives' %}
+
+<article>
+  <div class="row">
+    <div class = "col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-0">
+      <img src="{{ image(boardmember.image) }}" alt="{{ boardmember.name }}" class="img-responsive">
+    </div>
+
+    <div class="col-md-8 col-xs-12">
+      <h3>{{ boardmember.name }}</h3>
+    </div>
+    <div class="col-md-8 col-xs-12">
+      <p>{{ boardmember.body }}</p>
+    </div>
+  </div>
+</article>
+<br>
+
+{% endif %}
+
+{% endfor %}
+
+<h2 class="center">Regional Supervisor of Officials</h2>
+
+{% for boardmember in board %}
+
+{% if boardmember.officals_group == 'Regional Supervisor of Officials' %}
+
+<article>
+  <div class="row">
+    <div class = "col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-0">
+      <img src="{{ image(boardmember.image) }}" alt="{{ boardmember.name }}" class="img-responsive">
+    </div>
+
+    <div class="col-md-8 col-xs-12">
+      <h3>{{ boardmember.name }}</h3>
+    </div>
+    <div class="col-md-8 col-xs-12">
+      <p>{{ boardmember.body }}</p>
+    </div>
+  </div>
+</article>
+<br>
+
+{% endif %}
+
+{% endfor %}
+
+<h2 class="center">Treasurer</h2>
+
+{% for boardmember in board %}
+
+{% if boardmember.officals_group == 'Treasurer' %}
+
+<article>
+  <div class="row">
+    <div class = "col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-0">
+      <img src="{{ image(boardmember.image) }}" alt="{{ boardmember.name }}" class="img-responsive">
+    </div>
+
+    <div class="col-md-8 col-xs-12">
+      <h3>{{ boardmember.name }}</h3>
+    </div>
+    <div class="col-md-8 col-xs-12">
+      <p>{{ boardmember.body }}</p>
+    </div>
+  </div>
+</article>
+<br>
+
+{% endif %}
 
 {% endfor %}
 

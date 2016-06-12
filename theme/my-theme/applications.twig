@@ -1,0 +1,71 @@
+{% include '_header.twig' %}
+
+<h1 class="center"><a href="#new">New Officials</a></h1>
+<h1 class="center"><a href="#member">Members</a></h1>
+
+{% setcontent applications = "application" %}
+
+{% for application in applications %}
+
+    <h2 id="new" class="center">{{ application.intro_text_header }}</h2>
+    <br>
+    <p>{{ application.intro_text }}</p>
+
+    <br>
+
+    <h2 id="member" class="center">Southwestern Officials Association</h2>
+
+    <form method="post" action="form-to-email.php">
+
+        <label for="{{ application.full_name }}">{{ application.full_name }}</label>
+        <input type="text" class="form-control" name="{{ application.full_name }}">
+
+        <label for="{{ application.address }}">{{ application.address }}</label>
+        <input type="text" class="form-control" name="{{ application.address }}">
+
+        <label for="{{ application.city_state_zip }}">{{ application.city_state_zip }}</label>
+        <input type="text" class="form-control" name="{{ application.city_state_zip }}">
+
+        <label for="{{ application.home_phone }}">{{ application.home_phone }}</label>
+        <input type="text" class="form-control" name="{{ application.home_phone }}">
+
+        <label for="{{ application.work_phone }}">{{ application.work_phone }}</label>
+        <input type="text" class="form-control" name="{{ application.work_phone }}">
+
+        <label for="{{ application.cell_phone }}">{{ application.cell_phone }}</label>
+        <input type="text" class="form-control" name="{{ application.cell_phone }}">
+
+        <label for="{{ application.email }}">{{ application.email }}</label>
+        <input type="text" class="form-control" name="{{ application.email }}">
+
+        <label for="{{ application.occupation }}">{{ application.occupation }}</label>
+        <input type="text" class="form-control" name="{{ application.occupation }}">
+
+        <label for="{{ application.social_security }}">{{ application.social_security }}</label>
+        <input type="text" class="form-control" name="{{ application.social_security }}">
+
+        <label for="{{ application.date_of_birth }}">{{ application.date_of_birth }}</label>
+        <input type="text" class="form-control" name="{{ application.date_of_birth }}">
+
+        <label for="{{ application.high_school }}">{{ application.high_school }}</label>
+        <input type="text" class="form-control" name="{{ application.high_school }}">
+
+        <label for="sport">Sport(s) of interest:</label><br>
+        <input type="checkbox" name="Football" value="Football"> Football<br>
+        <input type="checkbox" name="Basketball" value="Basketball"> Basketball<br>
+
+        <p><em>{{ application.application_footer }}</em></p>
+
+        <div class="centered">
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+
+
+
+
+
+{% endfor %}
+
+{% include '_footer.twig' %}

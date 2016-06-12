@@ -286,7 +286,7 @@ wysiwyg:
     embed: false             # Allows the user to insert embedded video's from Youtube, Vimeo, etc.
     underline: true          # Adds a button to underline text, using the `<u>`-tag.
     ruler: false             # Adds a button to add a horizontal ruler, using the `<hr>`-tag.
-    strike: false            # Adds a button to add stikethrough, using the `<s>`-tag.
+    strike: true            # Adds a button to add stikethrough, using the `<s>`-tag.
     blockquote: false        # Allows the user to insert blockquotes using the `<blockquote>`-tag.
     codesnippet: false       # Allows the user to insert code snippets using `<pre><code>`-tags.
     specialchar: false       # Adds a button to insert special chars like '€' or '™'.

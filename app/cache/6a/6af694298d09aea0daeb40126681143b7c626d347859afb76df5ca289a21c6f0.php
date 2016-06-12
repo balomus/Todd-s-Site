@@ -19,7 +19,7 @@ class __TwigTemplate_3472cbf66d61689afa5b313e68a77f62bc8957c8499c4fcb8a100dd0833
         $this->loadTemplate("_header.twig", "contactus.twig", 1)->display($context);
         // line 2
         echo "
-<h1>Contact Us</h1>
+<h1 class=\"center\">Contact Us</h1>
 
 ";
         // line 5
@@ -85,10 +85,14 @@ class __TwigTemplate_3472cbf66d61689afa5b313e68a77f62bc8957c8499c4fcb8a100dd0833
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["contact"], "message", array()), "html", null, true);
             echo "</label>
-    <input type=\"text\" class=\"form-control\" name=\"";
+    <!-- <input type=\"text\" class=\"form-control\" name=\"";
             // line 23
             echo twig_escape_filter($this->env, $this->getAttribute($context["contact"], "message", array()), "html", null, true);
-            echo "\">
+            echo "\"> -->
+    <textarea class=\"form-control\" rows=\"5\" name=\"";
+            // line 24
+            echo twig_escape_filter($this->env, $this->getAttribute($context["contact"], "message", array()), "html", null, true);
+            echo "\"></textarea>
 
     <br>
 
@@ -101,11 +105,11 @@ class __TwigTemplate_3472cbf66d61689afa5b313e68a77f62bc8957c8499c4fcb8a100dd0833
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['contact'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 32
+        // line 33
         echo "
 ";
-        // line 33
-        $this->loadTemplate("_footer.twig", "contactus.twig", 33)->display($context);
+        // line 34
+        $this->loadTemplate("_footer.twig", "contactus.twig", 34)->display($context);
     }
 
     public function getTemplateName()
@@ -120,12 +124,12 @@ class __TwigTemplate_3472cbf66d61689afa5b313e68a77f62bc8957c8499c4fcb8a100dd0833
 
     public function getDebugInfo()
     {
-        return array (  108 => 33,  105 => 32,  90 => 23,  84 => 22,  79 => 20,  73 => 19,  68 => 17,  62 => 16,  57 => 14,  51 => 13,  46 => 11,  40 => 10,  36 => 8,  32 => 7,  29 => 6,  26 => 5,  21 => 2,  19 => 1,);
+        return array (  112 => 34,  109 => 33,  94 => 24,  90 => 23,  84 => 22,  79 => 20,  73 => 19,  68 => 17,  62 => 16,  57 => 14,  51 => 13,  46 => 11,  40 => 10,  36 => 8,  32 => 7,  29 => 6,  26 => 5,  21 => 2,  19 => 1,);
     }
 }
 /* {% include '_header.twig' %}*/
 /* */
-/* <h1>Contact Us</h1>*/
+/* <h1 class="center">Contact Us</h1>*/
 /* */
 /* {% setcontent contactus = "contact" %}*/
 /* */
@@ -145,7 +149,8 @@ class __TwigTemplate_3472cbf66d61689afa5b313e68a77f62bc8957c8499c4fcb8a100dd0833
 /*     <input type="text" class="form-control" name="{{ contact.subect }}">*/
 /* */
 /*     <label for="{{ contact.message }}">{{ contact.message }}</label>*/
-/*     <input type="text" class="form-control" name="{{ contact.message }}">*/
+/*     <!-- <input type="text" class="form-control" name="{{ contact.message }}"> -->*/
+/*     <textarea class="form-control" rows="5" name="{{ contact.message }}"></textarea>*/
 /* */
 /*     <br>*/
 /* */

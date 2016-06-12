@@ -44,14 +44,14 @@ class __TwigTemplate_335b7d5f06f39f506161780df2fccc8285dd6bb2b68f3f8661f729332c5
           <span class=\"icon-bar\"></span>
           <span class=\"icon-bar\"></span>
         </button>
-        <a class=\"navbar-brand\" href=\"/bolt\">Southwestern Officials Association</a>
+        <a class=\"navbar-brand navbar-fontsize\" href=\"/bolt\">Southwestern Officials Association</a>
       </div>
       <div class=\"collapse navbar-collapse\" id=\"myNavbar\">
         <ul class=\"nav navbar-nav navbar-right\">
           <li><a href=\"/bolt\">Home</a></li>
           <li><a href=\"news\">News</a></li>
           <li><a href=\"clinicsmeetings\">Clinics / Meetings</a></li>
-          <li><a href=\"#\">Contact Us</a></li>
+          <li><a href=\"contactus\">Contact Us</a></li>
           <li class=\"dropdown\">
             <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">More <span class=\"caret\"></span></a>
             <ul class=\"dropdown-menu\">
@@ -66,8 +66,9 @@ class __TwigTemplate_335b7d5f06f39f506161780df2fccc8285dd6bb2b68f3f8661f729332c5
               <li><a href=\"evaluations\">Evaluations</a></li>
               <li><a href=\"awards\">Awards</a></li>
               <li><a href=\"pictures\">Pictures</a></li>
-              <li><a href=\"#\">Application / Registration</a></li>
+              <li><a href=\"applications\">Application / Registration</a></li>
               <li><a href=\"links\">Links</a></li>
+              <li><a href=\"conflictofinterest\">Conflict of Interest</a></li>
             </ul>
         </ul>
       </div>
@@ -120,14 +121,14 @@ class __TwigTemplate_335b7d5f06f39f506161780df2fccc8285dd6bb2b68f3f8661f729332c5
 /*           <span class="icon-bar"></span>*/
 /*           <span class="icon-bar"></span>*/
 /*         </button>*/
-/*         <a class="navbar-brand" href="/bolt">Southwestern Officials Association</a>*/
+/*         <a class="navbar-brand navbar-fontsize" href="/bolt">Southwestern Officials Association</a>*/
 /*       </div>*/
 /*       <div class="collapse navbar-collapse" id="myNavbar">*/
 /*         <ul class="nav navbar-nav navbar-right">*/
 /*           <li><a href="/bolt">Home</a></li>*/
 /*           <li><a href="news">News</a></li>*/
 /*           <li><a href="clinicsmeetings">Clinics / Meetings</a></li>*/
-/*           <li><a href="#">Contact Us</a></li>*/
+/*           <li><a href="contactus">Contact Us</a></li>*/
 /*           <li class="dropdown">*/
 /*             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>*/
 /*             <ul class="dropdown-menu">*/
@@ -142,8 +143,9 @@ class __TwigTemplate_335b7d5f06f39f506161780df2fccc8285dd6bb2b68f3f8661f729332c5
 /*               <li><a href="evaluations">Evaluations</a></li>*/
 /*               <li><a href="awards">Awards</a></li>*/
 /*               <li><a href="pictures">Pictures</a></li>*/
-/*               <li><a href="#">Application / Registration</a></li>*/
+/*               <li><a href="applications">Application / Registration</a></li>*/
 /*               <li><a href="links">Links</a></li>*/
+/*               <li><a href="conflictofinterest">Conflict of Interest</a></li>*/
 /*             </ul>*/
 /*         </ul>*/
 /*       </div>*/

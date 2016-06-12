@@ -19,8 +19,8 @@ class __TwigTemplate_fb8d8c6d04110c77435148d709c86af83cd040f1265cd49a26bd4ca4e3b
         $this->loadTemplate("_header.twig", "news.twig", 1)->display($context);
         // line 2
         echo "
-<h1>News</h1>
-<p class=\"lead\">View all the news articles here.</p>
+<h1 class=\"center\">News</h1>
+<p class=\"lead centered\">View all the news articles here.</p>
 <hr>
 
 ";
@@ -77,11 +77,9 @@ class __TwigTemplate_fb8d8c6d04110c77435148d709c86af83cd040f1265cd49a26bd4ca4e3b
 
 <hr>
 
-pagination
-
 ";
-        // line 32
-        $this->loadTemplate("_footer.twig", "news.twig", 32)->display($context);
+        // line 30
+        $this->loadTemplate("_footer.twig", "news.twig", 30)->display($context);
     }
 
     public function getTemplateName()
@@ -96,13 +94,13 @@ pagination
 
     public function getDebugInfo()
     {
-        return array (  84 => 32,  75 => 26,  72 => 25,  60 => 19,  56 => 18,  47 => 14,  43 => 13,  38 => 10,  34 => 9,  31 => 8,  28 => 7,  21 => 2,  19 => 1,);
+        return array (  82 => 30,  75 => 26,  72 => 25,  60 => 19,  56 => 18,  47 => 14,  43 => 13,  38 => 10,  34 => 9,  31 => 8,  28 => 7,  21 => 2,  19 => 1,);
     }
 }
 /* {% include '_header.twig' %}*/
 /* */
-/* <h1>News</h1>*/
-/* <p class="lead">View all the news articles here.</p>*/
+/* <h1 class="center">News</h1>*/
+/* <p class="lead centered">View all the news articles here.</p>*/
 /* <hr>*/
 /* */
 /* {% setcontent news = 'news/latest/3' allowpaging %}*/
@@ -128,6 +126,5 @@ pagination
 /* */
 /* <hr>*/
 /* */
-/* pagination*/
-/* */
 /* {% include '_footer.twig' %}*/
+/* */

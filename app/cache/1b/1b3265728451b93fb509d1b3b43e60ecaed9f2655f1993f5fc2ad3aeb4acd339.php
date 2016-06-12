@@ -44,7 +44,7 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
           <span class=\"icon-bar\"></span>
           <span class=\"icon-bar\"></span>
         </button>
-        <a class=\"navbar-brand\" href=\"/bolt\">Southwestern Officials Association</a>
+        <a class=\"navbar-brand navbar-fontsize\" href=\"/bolt\">Southwestern Officials Association</a>
       </div>
       <div class=\"collapse navbar-collapse\" id=\"myNavbar\">
         <ul class=\"nav navbar-nav navbar-right\">
@@ -66,8 +66,9 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
               <li><a href=\"evaluations\">Evaluations</a></li>
               <li><a href=\"awards\">Awards</a></li>
               <li><a href=\"pictures\">Pictures</a></li>
-              <li><a href=\"#\">Application / Registration</a></li>
+              <li><a href=\"applications\">Application / Registration</a></li>
               <li><a href=\"links\">Links</a></li>
+              <li><a href=\"conflictofinterest\">Conflict of Interest</a></li>
             </ul>
         </ul>
       </div>
@@ -120,7 +121,7 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
 /*           <span class="icon-bar"></span>*/
 /*           <span class="icon-bar"></span>*/
 /*         </button>*/
-/*         <a class="navbar-brand" href="/bolt">Southwestern Officials Association</a>*/
+/*         <a class="navbar-brand navbar-fontsize" href="/bolt">Southwestern Officials Association</a>*/
 /*       </div>*/
 /*       <div class="collapse navbar-collapse" id="myNavbar">*/
 /*         <ul class="nav navbar-nav navbar-right">*/
@@ -142,8 +143,9 @@ class __TwigTemplate_9db1b51386aea2342385bd66bf2443f229d226173c734017ec546a9b32c
 /*               <li><a href="evaluations">Evaluations</a></li>*/
 /*               <li><a href="awards">Awards</a></li>*/
 /*               <li><a href="pictures">Pictures</a></li>*/
-/*               <li><a href="#">Application / Registration</a></li>*/
+/*               <li><a href="applications">Application / Registration</a></li>*/
 /*               <li><a href="links">Links</a></li>*/
+/*               <li><a href="conflictofinterest">Conflict of Interest</a></li>*/
 /*             </ul>*/
 /*         </ul>*/
 /*       </div>*/

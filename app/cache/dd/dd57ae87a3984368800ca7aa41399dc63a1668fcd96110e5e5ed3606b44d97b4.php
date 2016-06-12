@@ -23,7 +23,7 @@ class __TwigTemplate_3650d4b5d6f35ff9d2e379065c649cf508d34c1fa0f9d222e2cde227023
 <h1 class=\"center\"><a href=\"#Football\"><i class=\"icon-nfl\"></i> Football Clinics/Meetings</a></h1>
 
 <!-- Basketball -->
-<h2 id=\"Basketball\">Basketball</h2>
+<h2 id=\"Basketball\" class=\"center\">Basketball</h2>
 
 <div class=\"table-responsive\">
     <table class=\"table table-striped\">
@@ -109,7 +109,7 @@ class __TwigTemplate_3650d4b5d6f35ff9d2e379065c649cf508d34c1fa0f9d222e2cde227023
 
 <!-- Football -->
 
-<h2 id=\"Football\">Football</h2>
+<h2 id=\"Football\" class=\"center\">Football</h2>
 
 <div class=\"table-responsive\">
     <table class=\"table table-striped\">
@@ -219,7 +219,7 @@ class __TwigTemplate_3650d4b5d6f35ff9d2e379065c649cf508d34c1fa0f9d222e2cde227023
 /* <h1 class="center"><a href="#Football"><i class="icon-nfl"></i> Football Clinics/Meetings</a></h1>*/
 /* */
 /* <!-- Basketball -->*/
-/* <h2 id="Basketball">Basketball</h2>*/
+/* <h2 id="Basketball" class="center">Basketball</h2>*/
 /* */
 /* <div class="table-responsive">*/
 /*     <table class="table table-striped">*/
@@ -271,7 +271,7 @@ class __TwigTemplate_3650d4b5d6f35ff9d2e379065c649cf508d34c1fa0f9d222e2cde227023
 /* */
 /* <!-- Football -->*/
 /* */
-/* <h2 id="Football">Football</h2>*/
+/* <h2 id="Football" class="center">Football</h2>*/
 /* */
 /* <div class="table-responsive">*/
 /*     <table class="table table-striped">*/

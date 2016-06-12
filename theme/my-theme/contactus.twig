@@ -1,6 +1,6 @@
 {% include '_header.twig' %}
 
-<h1>Contact Us</h1>
+<h1 class="center">Contact Us</h1>
 
 {% setcontent contactus = "contact" %}
 
@@ -20,7 +20,8 @@
     <input type="text" class="form-control" name="{{ contact.subect }}">
 
     <label for="{{ contact.message }}">{{ contact.message }}</label>
-    <input type="text" class="form-control" name="{{ contact.message }}">
+    <!-- <input type="text" class="form-control" name="{{ contact.message }}"> -->
+    <textarea class="form-control" rows="5" name="{{ contact.message }}"></textarea>
 
     <br>
 

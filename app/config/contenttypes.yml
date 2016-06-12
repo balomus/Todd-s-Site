@@ -81,6 +81,10 @@ board:
         body:
             type: html
             height: 300px
+        officals_group:
+            type: select
+            values: [ Officials, School Representatives, Regional Supervisor of Officials, Treasurer ]
+    sort: datecreated ASC
 
 # ClinicsAndMeetings
 
@@ -163,6 +167,9 @@ Committees:
         members:
             type: html
             class: large
+        sport:
+            type: select
+            values: [ Basketball, Football, Both ]
     sort: committee ASC
 
 #ConstitutionAndBylaws
@@ -378,6 +385,57 @@ Pictures:
         imagelist:
             type: imagelist
 
+#Applications
+Applications:
+    name: Applications
+    singular_name: Application
+    slug: applications
+    singular_slug: application
+    listing_template: applications.twig
+    default_status: published
+    fields:
+        intro_text_header:
+            type: text
+            class: large
+        intro_text:
+            type: html
+            class: large
+        full_name:
+            type: text
+            class: large
+        address:
+            type: text
+            class: large
+        city_state_zip:
+            type: text
+            class: large
+        home_phone:
+            type: text
+            class: large
+        work_phone:
+            type: text
+            class: large
+        cell_phone:
+            type: text
+            class: large
+        email:
+            type: text
+            class: large
+        occupation:
+            type: text
+            class: large
+        social_security:
+            type: text
+            class: large
+        date_of_birth:
+            type: text
+            class: large
+        high_school:
+            type: text
+            class: large
+        application_footer:
+            type: html
+            class: large
 #Links
 Links:
     name: Links
@@ -420,4 +478,20 @@ ContactUs:
             class: large
         message:
             type: text
+            class: large
+
+#ConflictOfInterest
+ConflictOfInterest:
+    name: Conflict Of Interest
+    singular_name: ConflictOfInterest
+    slug: conflictofinterest
+    singular_slug: conflict
+    listing_template: conflictofinterest.twig
+    default_status: published
+    fields:
+        title:
+            type: text
+            class: large
+        content:
+            type: html
             class: large

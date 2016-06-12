@@ -33,25 +33,61 @@ class __TwigTemplate_98627f6ad715c7ade92e70abed8f657f844327667f1f9ab97b0858e265f
         foreach ($context['_seq'] as $context["_key"] => $context["committee"]) {
             // line 7
             echo "
-  <h2>";
+";
             // line 8
-            echo twig_escape_filter($this->env, $this->getAttribute($context["committee"], "committee", array()), "html", null, true);
-            echo "</h2>
+            if (($this->getAttribute($context["committee"], "sport", array()) == "Basketball")) {
+                // line 9
+                echo "  <h2>";
+                echo twig_escape_filter($this->env, $this->getAttribute($context["committee"], "committee", array()), "html", null, true);
+                echo " <i class=\"icon-nba\"></i></h2>
 \t<p>";
-            // line 9
-            echo twig_escape_filter($this->env, $this->getAttribute($context["committee"], "members", array()), "html", null, true);
-            echo "</p>
-
+                // line 10
+                echo twig_escape_filter($this->env, $this->getAttribute($context["committee"], "members", array()), "html", null, true);
+                echo "</p>
+";
+            }
+            // line 12
+            echo "
+";
+            // line 13
+            if (($this->getAttribute($context["committee"], "sport", array()) == "Football")) {
+                // line 14
+                echo "  <h2>";
+                echo twig_escape_filter($this->env, $this->getAttribute($context["committee"], "committee", array()), "html", null, true);
+                echo " <i class=\"icon-nfl\"></i></h2>
+\t<p>";
+                // line 15
+                echo twig_escape_filter($this->env, $this->getAttribute($context["committee"], "members", array()), "html", null, true);
+                echo "</p>
+";
+            }
+            // line 17
+            echo "
+";
+            // line 18
+            if (($this->getAttribute($context["committee"], "sport", array()) == "Both")) {
+                // line 19
+                echo "  <h2>";
+                echo twig_escape_filter($this->env, $this->getAttribute($context["committee"], "committee", array()), "html", null, true);
+                echo " <i class=\"icon-nba\"></i><i class=\"icon-nfl\"></i></h2>
+\t<p>";
+                // line 20
+                echo twig_escape_filter($this->env, $this->getAttribute($context["committee"], "members", array()), "html", null, true);
+                echo "</p>
+";
+            }
+            // line 22
+            echo "
 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['committee'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 12
+        // line 24
         echo "
 ";
-        // line 13
-        $this->loadTemplate("_footer.twig", "committees.twig", 13)->display($context);
+        // line 25
+        $this->loadTemplate("_footer.twig", "committees.twig", 25)->display($context);
     }
 
     public function getTemplateName()
@@ -66,7 +102,7 @@ class __TwigTemplate_98627f6ad715c7ade92e70abed8f657f844327667f1f9ab97b0858e265f
 
     public function getDebugInfo()
     {
-        return array (  54 => 13,  51 => 12,  42 => 9,  38 => 8,  35 => 7,  31 => 6,  28 => 5,  25 => 4,  21 => 2,  19 => 1,);
+        return array (  90 => 25,  87 => 24,  80 => 22,  75 => 20,  70 => 19,  68 => 18,  65 => 17,  60 => 15,  55 => 14,  53 => 13,  50 => 12,  45 => 10,  40 => 9,  38 => 8,  35 => 7,  31 => 6,  28 => 5,  25 => 4,  21 => 2,  19 => 1,);
     }
 }
 /* {% include '_header.twig' %}*/
@@ -76,8 +112,20 @@ class __TwigTemplate_98627f6ad715c7ade92e70abed8f657f844327667f1f9ab97b0858e265f
 /* */
 /* {% for committee in committees %}*/
 /* */
-/*   <h2>{{ committee.committee }}</h2>*/
+/* {% if committee.sport == 'Basketball' %}*/
+/*   <h2>{{ committee.committee }} <i class="icon-nba"></i></h2>*/
 /* 	<p>{{ committee.members }}</p>*/
+/* {% endif %}*/
+/* */
+/* {% if committee.sport == 'Football' %}*/
+/*   <h2>{{ committee.committee }} <i class="icon-nfl"></i></h2>*/
+/* 	<p>{{ committee.members }}</p>*/
+/* {% endif %}*/
+/* */
+/* {% if committee.sport == 'Both' %}*/
+/*   <h2>{{ committee.committee }} <i class="icon-nba"></i><i class="icon-nfl"></i></h2>*/
+/* 	<p>{{ committee.members }}</p>*/
+/* {% endif %}*/
 /* */
 /* {% endfor %}*/
 /* */
